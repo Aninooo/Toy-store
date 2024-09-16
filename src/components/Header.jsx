@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './header.css';
-import { IoMdCart } from "react-icons/io";
+import { CiShoppingCart } from "react-icons/ci";
 import { Link, useNavigate } from 'react-router-dom';
-import { MdOutlineAccountCircle } from "react-icons/md";
+import { VscAccount } from "react-icons/vsc";
 import { CiSearch } from "react-icons/ci";
 
 function Header() {
@@ -29,8 +29,8 @@ function Header() {
 
       <div className="icon-links">
         <Link to="/search"><CiSearch /></Link>
-        <Link to="/account"><MdOutlineAccountCircle /></Link>
-        <Link to="/cart"><IoMdCart /></Link>
+        <Link to="/account"><VscAccount /></Link>
+        <Link to="/cart"><CiShoppingCart /></Link>
       </div>
     </header>
   );
