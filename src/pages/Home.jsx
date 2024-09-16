@@ -8,17 +8,56 @@ import Corazon from '../assets/img1.jpg';
 import KidLaw from '../assets/img2.jpg';
 import Beepo from '../assets/img3.jpg';
 
+import Bleach from '../assets/slider/bleach.png'
+import DemonSlayer from '../assets/slider/demonslayer.png'
+import Dragonball from '../assets/slider/dragonball.png'
+import HeroAcademia from '../assets/slider/heroacademia.png'
+import Onepiece from '../assets/slider/onepiece.png'
+import Slamdunk from '../assets/slider/slamdunk.png'
+import Transformers from '../assets/slider/transformers.png'
+
 const images = [Corazon, KidLaw, Beepo];
+const animeLogos = [Bleach, DemonSlayer, Dragonball, HeroAcademia, Onepiece, Slamdunk, Transformers];
+
+const CustomPrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div className="arrow arrow-left" onClick={onClick}>
+            &#10094;
+        </div>
+    );
+};
+
+const CustomNextArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div className="arrow arrow-right" onClick={onClick}>
+            &#10095;
+        </div>
+    );
+};
 
 const Home = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,
+    slidesToShow: 1,    
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+  };
+  
+  const animeSettings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 4, 
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
   };
 
   return (
@@ -32,8 +71,19 @@ const Home = () => {
           ))}
         </Slider>
       </div>
+
+      <div className='anime-slider-container'>
+        <Slider {...animeSettings}>
+          {animeLogos.map((logo, index) => (
+            <div key={index} className='anime-slide'>
+              <img src={logo} alt={`Anime Logo ${index}`} className='anime-slider-image' />
+            </div>
+          ))}
+        </Slider>
+      </div>
+
       <div className='display-container'>
-        <img className='law' src={Law} alt="" />
+        <img className='law' src={Law} alt="Law" />
       </div>
     </div>
   );

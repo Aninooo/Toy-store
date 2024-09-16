@@ -9,6 +9,15 @@ header {
     position: relative;
     z-index: 1;
 }
+.logo-container{
+    display: flex;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+    margin-left: 0;
+
+}
 
 .nav-container {
     display: flex;

@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { CiSearch } from "react-icons/ci";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Logo from '../assets/logo-law.png'
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -24,6 +25,9 @@ function Header() {
 
   return (
     <header>
+        <div className='logo-container'>
+        <img className='logo' src={Logo} alt="" />
+        </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/newarrivals">New Arrivals</Link></li>
