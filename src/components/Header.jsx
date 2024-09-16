@@ -49,7 +49,7 @@ function Header() {
 
       <div className="icon-links">
         <Link to="/search"><CiSearch /></Link>
-        <Link to="/account"><VscAccount /></Link>
+        <Link to="/account">{<VscAccount style={{ fontSize: '20px' }} />}</Link>
         <Link to="/cart"><CiShoppingCart /></Link>
       </div>
     </header>

@@ -13,8 +13,8 @@ header {
     display: flex;
 }
 .logo{
-    height: 5rem;
-    width: 5rem;
+    height: 8rem;
+    width: 8rem;
     margin-left: 0;
 
 }
@@ -40,7 +40,7 @@ header {
 
 .nav-links li a, .dropdown-toggle {
     text-decoration: none;
-    color: white;
+    color: #710303;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     position: relative;
@@ -49,6 +49,10 @@ header {
     border: none;
     background: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 60%; 
+
 }
 
 .nav-links li a::before, .dropdown-toggle::before {
@@ -71,7 +75,7 @@ header {
 }
 
 .nav-links li a:hover, .dropdown-toggle:hover {
-    color: #fff;
+    color: #710303;
     transform: translateY(-2px);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -90,7 +94,13 @@ header {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #710303;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    height: 100%;
 }
+
 
 .dropdown-menu {
     display: none;
@@ -115,7 +125,7 @@ header {
     padding: 0.5rem 1rem;
     display: block;
     text-decoration: none;
-    color: white;
+    color: #710303;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -146,7 +156,7 @@ header {
 }
 
 .icon-links svg {
-    color: #fff;
+    color: #710303;
     font-size: 1.5rem;
 }
 
