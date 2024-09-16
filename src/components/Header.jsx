@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './header.css';
-import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCart } from "react-icons/io";
 import { Link, useNavigate } from 'react-router-dom';
+import { MdOutlineAccountCircle } from "react-icons/md";
+import { CiSearch } from "react-icons/ci";
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -17,26 +18,19 @@ function Header() {
 
   return (
     <header>
-      <div className='hamburger-menu'><GiHamburgerMenu /></div>
-      <h1 className='title'>Anino's Toy Collections</h1>
-      <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/account">Account</Link></li>
-          <form onSubmit={handleSearch} className='search-form'>
-        <input
-          type="text"
-          placeholder='Search Toys...'
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button type="submit">Search</button>
-      </form>
-          <li><Link to="/cart" className='cart-icon'><IoMdCart /></Link></li>
-          
-        </ul>
+
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/newarrivals">New Arrivals</Link></li>
+        <li><Link to="/products">All Products</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+
+      <div className="icon-links">
+        <Link to="/search"><CiSearch /></Link>
+        <Link to="/account"><MdOutlineAccountCircle /></Link>
+        <Link to="/cart"><IoMdCart /></Link>
       </div>
     </header>
   );
