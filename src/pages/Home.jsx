@@ -123,9 +123,9 @@ const Home = () => {
     {
         id: 8,
         image: ZoroProducts,
-        title: 'Product 2',
-        description: 'This is a description of Product 2.',
-        price: 39.99
+        title: '1/6 Scale Egghead Island Arc Roronoa Zoro',
+        description: ' ONE PIECE Resin Statue - X6 Studio [Pre-Order]',
+        price: 7616                                                               
     },
   ];
   return (
