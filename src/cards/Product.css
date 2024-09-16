@@ -5,6 +5,7 @@
   padding: 1rem;
   margin: 0;
   box-sizing: border-box;
+  color: #FFFFFF;
 }
 
 .product-card {
@@ -13,10 +14,10 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #dacda9;
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #161616;
 }
 
 .product-image {
@@ -42,14 +43,14 @@
 .product-title {
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: #FFFFFF;
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .product-description {
-  color: #666;
+  color: rgb(182, 180, 180);
   font-size: 0.875rem;
   margin: 0 0 0.5rem 0;
   overflow: hidden;
@@ -58,7 +59,7 @@
 
 .product-price {
   font-size: 1.125rem;
-  color: #333;
+  color: #FFFFFF;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -80,8 +81,8 @@
 }
 
 .add-to-cart-button {
-  background-color: #ffbf00; 
-  color: white; 
+  background-color: #ec6801;
+  color: #FFFFFF;
   padding: 0.4rem;
   width: 150px; 
   border: none;
@@ -91,7 +92,7 @@
 }
 
 .icon-button {
-  background-color: #ffbf00; 
+  background-color: #ec6801;
   border: none;
   padding: 0.5rem;
   font-size: 0.95rem;
@@ -101,12 +102,12 @@
   justify-content: center; 
   transition: background-color 0.3s ease, opacity 0s ease; 
   cursor: pointer;
-  color: #ddd;
+  color: #FFFFFF;
   border-right: 1px solid black;
 }
 
 .icon-button:hover {
-  background-color: #e0a800;
+  background-color: #ca8b5b;
 }
 
 .product-card:hover .add-to-cart-button {
@@ -115,7 +116,7 @@
 }
 
 .add-to-cart-button:hover {
-  background-color: #e0a800; 
+  background-color: #ca8b5b;
 }
 
 @media (max-width: 1200px) {
