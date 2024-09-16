@@ -168,12 +168,3 @@ input {
     border: 1px solid black;
     padding: 10px;
 }
-
-button {
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 0 5px 5px 0;
-    background-color: #FFBF00;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
