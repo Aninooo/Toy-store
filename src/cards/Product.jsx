@@ -7,13 +7,24 @@ const Product = ({ image, title, description, price }) => {
     currency: 'PHP',
   }).format(price);
 
+  const handleAddToCart = () => {
+    alert(`${title} added to cart!`);
+  };
+
   return (
     <div className="product-card">
       <img src={image} alt={title} className="product-image" />
       <div className="product-info">
-        <h2 className="product-title">{title}</h2>
-        <p className="product-description">{description}</p>
-        <span className="product-price">{formattedPrice}</span>
+        <div>
+          <h2 className="product-title">{title}</h2>
+          <p className="product-description">{description}</p>
+        </div>
+        <div>
+          <span className="product-price">{formattedPrice}</span>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>
+            Add to Cart
+          </button>
+        </div>
       </div>
     </div>
   );
