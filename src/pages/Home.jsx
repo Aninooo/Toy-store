@@ -15,6 +15,17 @@ import HeroAcademia from '../assets/slider/heroacademia.png'
 import Onepiece from '../assets/slider/onepiece.png'
 import Slamdunk from '../assets/slider/slamdunk.png'
 import Transformers from '../assets/slider/transformers.png'
+import Product from '../cards/Product';
+
+import CorazonProducts from '../assets/products/corazon.png'
+import LawMDProducts from '../assets/products/lawMD.png'
+import DoflamingoProducts from '../assets/products/doflamingo.png'
+import PopDoffyProducts from '../assets/products/popdoffy.png'
+import ResinCorazonProducts from '../assets/products/resincorazon.png'
+import DoffyCoraProducts from '../assets/products/doffycora.png'
+import G5LuffyProducts from '../assets/products/G5Luffy.png'
+import ZoroProducts from '../assets/products/zoro.png'
+
 
 const images = [Corazon, KidLaw, Beepo];
 const animeLogos = [Bleach, DemonSlayer, Dragonball, HeroAcademia, Onepiece, Slamdunk, Transformers];
@@ -59,7 +70,64 @@ const Home = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
-
+  const products = [
+    {
+      id: 1,
+      image: CorazonProducts,
+      title: 'One Piece - Corazon',
+      description: 'Corazon (Rosinante) - DXF Figure (Banpresto) - ONE PIECE',
+      price: 1500
+    },
+    {
+      id: 2,
+      image: LawMDProducts,
+      title: 'Law Super Master Stars Piece One Piece',
+      description: 'Official Banpresto figure Brand new',
+      price: 1800
+    },
+    {
+        id: 3,
+        image: DoflamingoProducts,
+        title: 'Doflamingo Blacksuit',
+        description: 'Young Donquixote Doflamingo Black ver.',
+        price: 12000
+    },
+    {
+        id: 4,
+        image: PopDoffyProducts,
+        title: 'Pop! Donquixote Doflamingo',
+        description: 'Donquixote Doflamingo is on the hunt to find Luffy and the Straw Hat Pirates to make them pay for his arrest and dethroning.',
+        price: 650
+    },
+    {
+    id: 5,
+    image: ResinCorazonProducts,
+    title: 'Donquixote Rosinante Resin statue',
+    description: 'A brand-new, unused, unopened, undamaged item..',
+    price: 32984
+    },
+    {
+        id: 6,
+        image: DoffyCoraProducts,
+        title: 'The Gentlest Corazon / Donquixote Rosinante ',
+        description: 'WHO/S Studio Resin + PUH43 * W30 * D38cm Estimated',
+        price: 56000
+    },
+    {
+        id: 7,
+        image: G5LuffyProducts,
+        title: 'POP Scale Straw Hat Crew Series 001 Nika Monkey D. Luffy',
+        description: 'Fox Studios Resin + PU POP Scale H36 * W24 *D27cm Estimated',
+        price: 34000
+    },
+    {
+        id: 8,
+        image: ZoroProducts,
+        title: 'Product 2',
+        description: 'This is a description of Product 2.',
+        price: 39.99
+    },
+  ];
   return (
     <div className='home-container'>
       <div className='slider-container'>
@@ -81,6 +149,20 @@ const Home = () => {
           ))}
         </Slider>
       </div>
+      <div className="home-container">
+      <h1>Featured Products</h1>
+      <div className="product-list">
+        {products.map(product => (
+          <Product
+            key={product.id}
+            image={product.image}
+            title={product.title}
+            description={product.description}
+            price={product.price}
+          />
+        ))}
+      </div>
+    </div>
 
       <div className='display-container'>
         <img className='law' src={Law} alt="Law" />

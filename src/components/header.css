@@ -40,7 +40,7 @@ header {
 
 .nav-links li a, .dropdown-toggle {
     text-decoration: none;
-    color: #710303;
+    color: black;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     position: relative;
@@ -75,7 +75,7 @@ header {
 }
 
 .nav-links li a:hover, .dropdown-toggle:hover {
-    color: #710303;
+    color: black;
     transform: translateY(-2px);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -95,7 +95,7 @@ header {
     align-items: center;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: #710303;
+    color: black;
     transition: color 0.3s ease-in-out;
     position: relative;
     height: 100%;
@@ -125,7 +125,7 @@ header {
     padding: 0.5rem 1rem;
     display: block;
     text-decoration: none;
-    color: #710303;
+    color: black;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -156,7 +156,7 @@ header {
 }
 
 .icon-links svg {
-    color: #710303;
+    color: black;
     font-size: 1.5rem;
 }
 
