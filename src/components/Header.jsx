@@ -4,9 +4,11 @@ import { CiShoppingCart } from "react-icons/ci";
 import { Link, useNavigate } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { CiSearch } from "react-icons/ci";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 function Header() {
   const [query, setQuery] = useState('');
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleSearch = (event) => {
@@ -16,13 +18,27 @@ function Header() {
     }
   };
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <header>
-
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/newarrivals">New Arrivals</Link></li>
-        <li><Link to="/products">All Products</Link></li>
+        <li className="dropdown">
+          <button 
+            className={`dropdown-toggle ${isDropdownOpen ? 'active' : ''}`} 
+            onClick={toggleDropdown}
+          >
+            All Products <IoMdArrowDropdown className="dropdown-icon" />
+          </button>
+          <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+            <li><Link to="/big-sale">Big Sale</Link></li>
+            <li><Link to="/on-stack">On Stack</Link></li>
+          </ul>
+        </li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
