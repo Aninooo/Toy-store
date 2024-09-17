@@ -164,9 +164,7 @@ const Home = () => {
       </div>
     </div>
 
-      <div className='display-container'>
-        <img className='law' src={Law} alt="Law" />
-      </div>
+      
     </div>
   );
 };

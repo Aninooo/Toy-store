@@ -6,7 +6,7 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Account from './pages/Account.jsx';
 import Search from './pages/Search.jsx';
-import Header from './components/Header.jsx'; // Import Header component
+import Header from './components/Header.jsx'; 
 import NewArrivals from './pages/NewArrivals.jsx';
 import Brands from './pages/Brands.jsx'
 import './index.css';

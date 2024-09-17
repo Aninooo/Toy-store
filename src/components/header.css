@@ -43,6 +43,42 @@ header {
     position: relative;
 }
 
+.search-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: #FFBF00;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
 .nav-links li a, .dropdown-toggle {
     text-decoration: none;
     color: black;
@@ -56,13 +92,12 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    height: 60%;
 }
 
 .nav-links li a::before, .dropdown-toggle::before {
     content: "";
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -73,7 +108,7 @@ header {
 }
 
 .nav-links li a:hover::before, .dropdown-toggle:hover::before {
-    top: 0; 
+    top: 0;
     visibility: visible;
     transition: top 0.4s ease-in-out, visibility 0s ease-in-out 0s;
 }
@@ -83,7 +118,6 @@ header {
     transform: translateY(-2px);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
 
 .dropdown {
     position: relative;
@@ -101,8 +135,6 @@ header {
     font-size: 1rem;
     color: black;
     transition: color 0.3s ease-in-out;
-    position: relative;
-    height: 100%;
 }
 
 .dropdown-menu {
@@ -167,4 +199,62 @@ input {
     border-radius: 5px 0px 0px 5px;
     border: 1px solid black;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        height: 6rem;
+        width: 6rem;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFBF00;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .icon-links {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    .search-popup {
+        width: 90%;
+    }
 }
