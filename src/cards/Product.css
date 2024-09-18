@@ -74,10 +74,10 @@
   justify-content: center; 
   opacity: 0; 
   transition: opacity 0.3s ease;
-  position: absolute;
-  bottom: 1rem; 
+  bottom: 5rem; 
   left: 1rem;
   right: 1rem;
+  margin-top: 0.30rem;
 }
 
 .product-card:hover .product-footer {
@@ -87,7 +87,7 @@
 .add-to-cart-button {
   background-color: #ec6801;
   color: #FFFFFF;
-  padding: 0.4rem;
+  padding: 0.413rem;
   width: 150px; 
   border: none;
   cursor: pointer;

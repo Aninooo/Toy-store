@@ -164,7 +164,16 @@ const Home = () => {
       </div>
     </div>
 
-      
+<footer>
+  <div className='footer-info'>
+    <h4><b>Information</b></h4>
+    <a href="">Search</a>
+    <a href="">FAQs</a>
+    <a href="">Payment Methods</a>
+    <a href="">Shipping/Pick-up Details</a>
+    <a href="">About us</a>
+  </div>
+</footer>
     </div>
   );
 };
