@@ -63,6 +63,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    
 }
 
 .nav-links {
@@ -71,10 +72,13 @@ header {
     gap: 0.50rem;
     margin: 0;
     list-style: none;
+    
+    
 }
 
 .nav-links li {
     position: relative;
+    
 }
 
 .trust-img{
@@ -129,6 +133,7 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
+    
 }
 
 .nav-links li a::before, .dropdown-toggle::before {
@@ -310,6 +315,10 @@ input {
     }
     .trust-img{
         width: 50px;
+    }
+    .nav-links li a, .dropdown-toggle {
+        font-size: 0.85rem;
+        
     }
 
 }
