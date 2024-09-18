@@ -21,7 +21,13 @@
   background-color: #161616;
   width: 300px;
 }
-
+.pre-order{
+  position: absolute;
+  background-color: #ec6801;
+  top: 10px;
+  right: 0;
+  padding: 0.20rem;
+}
 .product-image {
   width: 100%;
   height: 200px;

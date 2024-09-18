@@ -25,6 +25,7 @@ const Product = ({ image, title, description, price }) => {
   return (
     <div className="product-card">
       <img src={image} alt={title} className="product-image" />
+      <div className='pre-order'>PRE-ORDER</div>
       <div className="product-footer">
         <button className="icon-button" onClick={handleWishlist}>
         <FaRegHeart />
@@ -33,7 +34,7 @@ const Product = ({ image, title, description, price }) => {
           <FaLink />
         </button>
         <button className="add-to-cart-button" onClick={handleAddToCart}>
-          Add to Cart
+          Order now!
         </button>
       </div>
       <div className="product-info">

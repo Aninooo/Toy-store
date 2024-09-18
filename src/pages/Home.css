@@ -8,7 +8,10 @@
     overflow: hidden;
     color: white;
 }
-
+.home-container > h1{
+    margin-bottom: -40px;
+    font-size: 1.80rem;
+}
 .slider-container {
     width: 50%;
     max-width: 600px;
