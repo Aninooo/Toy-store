@@ -4,6 +4,7 @@ import { CiShoppingCart, CiSearch } from "react-icons/ci";
 import { Link, useNavigate } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Logo from '../assets/logo-Law.png';
 
 function Header() {
   const [query, setQuery] = useState('');
