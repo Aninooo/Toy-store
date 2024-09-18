@@ -1,16 +1,10 @@
-.head-head{
-    background-color: #FFBF00;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-
-}
 .fbpage {
-    background: linear-gradient(to right, #FFBF00, #aee0f7) !important;
-    border: 1px solid black;
-    color: #3700ff;
+    color: #f7f7f7;
     text-align: center;
     width: 100%;
+    background-color: #373838;
+    margin: 0;
+    padding: 0.600rem;
   }
   .fbpage span {
     cursor: pointer;

@@ -204,7 +204,7 @@ color: #ff0000;
 }
 
 .map-section .gmap-frame #gmap-canvas{
-    height: 65vh;
+    height: 40vh;
     width: 800px;
     border-radius: 5px;
     margin-bottom: 20px;
