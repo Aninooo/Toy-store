@@ -246,5 +246,9 @@ color: #c18d68;
     font-size: 0.570rem;
     justify-content: space-between;
 }
+.home-container > h1 {
+    font-size: 15px;
+    margin: 0;
+}
     
 }

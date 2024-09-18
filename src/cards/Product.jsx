@@ -45,6 +45,17 @@ const Product = ({ image, title, description, price }) => {
           <span className="product-price">{formattedPrice}</span>
         </div>
       </div>
+      <div className="product-footer-mobile">
+        <button className="icon-button-mobile" onClick={handleWishlist}>
+        <FaRegHeart />
+        </button>
+        <button className="icon-button-mobile" onClick={handleCopyLink}>
+          <FaLink />
+        </button>
+        <button className="add-to-cart-button-mobile" onClick={handleAddToCart}>
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 };
