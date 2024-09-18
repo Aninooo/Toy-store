@@ -6,6 +6,7 @@ import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -54,6 +55,9 @@ function Header() {
   }, []);
 
   return (
+    <>
+      <div className='head-head'><a className='fbpage' href="https://www.facebook.com/AninoGaming"><span>Follow Anino's Toy Collections Facebook page by Clicking here</span></a></div>
+   
     <header>
       <div className='logo-container'>
         <img className='logo' src={Logo} alt="Logo" />
@@ -119,6 +123,7 @@ function Header() {
         </div>
       )}
     </header>
+    </>
   );
 }
 
