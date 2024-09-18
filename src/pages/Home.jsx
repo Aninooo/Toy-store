@@ -191,16 +191,16 @@ const Home = () => {
     </div>
     <div className='needsomehelp'>
     <h2>Need some help?</h2>
-    <p>We're here and ready by phone and email every day,</p>
+    <p>We're here and ready by phone, email, and Facebook page every day,</p>
     <p>M-Sat 10am-6pm</p>
     <div className="need-help-icons">
     <div className="icon-label">
-        <a className='call' href=""><IoIosCall /></a>
+        <a className='call' href="tel:09947946338"><IoIosCall /></a>
         <label htmlFor="call">Call</label>
     </div>
     <div className="icon-label">
-        <a className='facebook' href=""><SiFacebook /></a>
-        <label htmlFor="facebook">Facebook page</label>
+        <a className='facebook' href="https://www.facebook.com/profile.php?id=100093050435995"><SiFacebook /></a>
+        <label htmlFor="facebook">Facebook</label>
     </div>
     <div className="icon-label">
         <a className='faq' href=""><FaQuestionCircle /></a>
