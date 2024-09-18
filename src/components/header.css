@@ -152,6 +152,7 @@ header {
     top: 0;
     visibility: visible;
     transition: top 0.4s ease-in-out, visibility 0s ease-in-out 0s;
+    
 }
 
 .nav-links li a:hover, .dropdown-toggle:hover {
@@ -164,6 +165,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
+    
 }
 
 .dropdown-toggle {
@@ -176,6 +178,7 @@ header {
     font-size: 1rem;
     color: black;
     transition: color 0.3s ease-in-out;
+    
 }
 
 .dropdown-menu {
@@ -318,6 +321,10 @@ input {
     }
     .nav-links li a, .dropdown-toggle {
         font-size: 0.85rem;
+        
+    }
+    .dropdown-toggle {
+        font-size:  0.85rem;
         
     }
 
