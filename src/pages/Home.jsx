@@ -165,9 +165,15 @@ const Home = () => {
           />
         ))}
       </div>
+      </div>
+        <div className='map-section'>
+          <h1 className='store-loc'>Store Location</h1>
+        <div className='gmap-frame'>
+    <iframe id='gmap-canvas' width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Sta.%20Cruz%20sur,%20Iriga%20City%20Camarines%20sur+(Anino's%20Toy%20Collections)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
     </div>
-
+    </div>
     <footer>
+
       {/*For Mobile*/}
       <div className='info'>
         <div>

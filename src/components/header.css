@@ -19,11 +19,11 @@
     transition: 0.4s;
   }
   .fbpage span:after {
-    content: '\00bb';
+    content: '\00bb''\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: -80px;
     transition: 0.5s;
   }
   .fbpage:hover span {
@@ -64,6 +64,7 @@ header {
     align-items: center;
     flex-grow: 1;
     
+    
 }
 
 .nav-links {
@@ -72,8 +73,6 @@ header {
     gap: 0.50rem;
     margin: 0;
     list-style: none;
-    
-    
 }
 
 .nav-links li {
@@ -133,7 +132,6 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    
 }
 
 .nav-links li a::before, .dropdown-toggle::before {
