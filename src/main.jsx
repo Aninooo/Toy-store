@@ -9,6 +9,7 @@ import Search from './pages/Search.jsx';
 import Header from './components/Header.jsx'; 
 import NewArrivals from './pages/NewArrivals.jsx';
 import Brands from './pages/Brands.jsx'
+import Chatbot from './Chatbot.jsx';
 import './index.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='newarrivals' element={<NewArrivals />}></Route>
         <Route path='brands' element={<Brands />}></Route>
       </Routes>
+      <Chatbot /> 
     </BrowserRouter>
   );
 }

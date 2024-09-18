@@ -56,7 +56,7 @@ function Header() {
 
   return (
     <>
-      <div className='head-head'><a className='fbpage' href="https://www.facebook.com/AninoGaming"><span>Follow Anino's Toy Collections Facebook page by Clicking here</span></a></div>
+      <div className='head-head'><a className='fbpage' href="https://www.facebook.com/AninoGaming"><span className='underline'>Follow Anino's Toy Collections Facebook page by Clicking here</span></a></div>
    
     <header>
       <div className='logo-container'>

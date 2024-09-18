@@ -9,7 +9,7 @@
     color: white;
 }
 .home-container > h1{
-    margin-bottom: -40px;
+    margin-bottom: -50px;
     font-size: 1.80rem;
 }
 .slider-container {
@@ -140,16 +140,17 @@ footer {
     justify-content: center; 
     font-size: 0.90rem;
 }
+.footer-main .footer-info a,
+.footer-main .footer-account a,
+.footer-main .get-in-touch a {
+    color: black !important; 
+}
 
 a {
     text-decoration: none;
     color: black;
     display: block; 
     margin: 5px 0; 
-}
-
-a:hover {
-    text-decoration: underline white;
 }
 
 .copyrights {

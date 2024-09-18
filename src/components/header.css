@@ -11,6 +11,7 @@
     display: inline-block;
     position: relative;
     transition: 0.4s;
+     color: rgb(243, 109, 109);
   }
   .fbpage span:after {
     content: '\00bb''\00bb';
@@ -27,7 +28,9 @@
     opacity: 1;
     right: 0;
   }
-
+  .underline{
+    text-decoration: underline;
+  }
   
 header {
     background-color: #FFBF00;
@@ -44,6 +47,14 @@ header {
     display: flex;
     
 }
+.ui.header,
+.ui.menu,
+.ui.container {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    display: block !important;
+}
 
 .logo {
   height: 8rem;
@@ -57,7 +68,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    
     
 }
 
@@ -73,6 +83,7 @@ header {
     position: relative;
     
 }
+
 
 .trust-img{
     width: 70px;
