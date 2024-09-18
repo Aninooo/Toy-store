@@ -7,7 +7,6 @@ import { SiFacebook } from "react-icons/si";
 import { FaQuestionCircle } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import './Home.css'; 
-import Law from '../assets/Law.png';
 import Corazon from '../assets/img1.jpg';
 import KidLaw from '../assets/img2.jpg';
 import Beepo from '../assets/img3.jpg';
