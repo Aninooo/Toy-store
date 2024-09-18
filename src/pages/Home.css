@@ -71,11 +71,6 @@
     z-index: -1;
 }
 
-.law {
-    width: 100%;
-    height: 100%;
-}
-
 .arrow {
     position: absolute;
     top: 50%;
@@ -93,7 +88,7 @@
 }
 
 .arrow-right {
-    right: 40px;
+    right: 35px;
 }
 
 .slide {
