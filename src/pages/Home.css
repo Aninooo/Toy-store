@@ -122,6 +122,7 @@ footer {
     padding: 20px;
     box-sizing: border-box; 
     height: 100%;
+    font-size: 12px;
 }
 
 
@@ -190,7 +191,7 @@ a:hover {
 }
 
 .icon-label label {
-    font-size: 0.875rem; 
+    font-size: 12px;
     color: black;
 }
 .call:hover{

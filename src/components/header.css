@@ -210,7 +210,7 @@ input {
         height: 6rem;
         width: 6rem;
         margin-left: 0;
-        left: 0;
+        left: 450px;
     }
 
     .nav-container {
@@ -257,3 +257,21 @@ input {
         width: 90%;
     }
 }
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .logo-container {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        height: 6rem;
+        width: 6rem;
+        margin-left: 0;
+        left: 200px;
+    }
+
+}
+

@@ -76,7 +76,6 @@
   justify-content: center; 
   opacity: 0; 
   transition: opacity 0.3s ease;
-  bottom: 5rem; 
   left: 1rem;
   right: 1rem;
   margin-top: 0.30rem;
