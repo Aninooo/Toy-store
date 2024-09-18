@@ -199,58 +199,54 @@ input {
     border: 1px solid black;
     padding: 10px;
 }
+.hamburger-menu{
+    display: none;
+}
 
 @media (max-width: 768px) {
-    .logo-container {
-        flex: 1;
-        justify-content: flex-start;
+    header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
     }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
+    
 
     .logo {
-        height: 6rem;
-        width: 6rem;
-        margin-left: 0;
-        left: 450px;
+        height: 1rem;
+        width: 2px;
+        background-color: red;
+        justify-content: center;
+    
     }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #FFBF00;
-    }
-
-    .nav-links.show {
+    .icon-links {
         display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: end;
+     
     }
 
     .nav-links li {
         width: 100%;
+        display: none;
+        
     }
 
     .icon-links {
         margin-left: 0;
         margin-top: 1rem;
     }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-left: auto;
-    }
-
-    .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 5px 0;
-        transition: 0.3s;
+    .hamburger-menu{
+        position: relative;
+       display: flex;
+       justify-content: start;
+       right: 0;
+       left: -120px;
     }
 
     .search-popup {

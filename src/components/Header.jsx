@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -91,7 +92,9 @@ function Header() {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
+       
         <div className="icon-links">
+        <div className='hamburger-menu'><GiHamburgerMenu /></div>
           <div ref={searchButtonRef} style={{ display: 'inline-block' }}>
             <CiSearch 
               onClick={toggleSearch} 

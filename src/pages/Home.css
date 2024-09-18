@@ -202,21 +202,49 @@ color: blue;
 color: #c18d68;
 }
 
+/*For mobile*/
+.info{
+    display: none; 
+}
+
 
 @media (max-width: 768px) {
     .slider-container {
         width: 70%;
     }
+    .anime-slider-image {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
 
-    .anime-slider-container {
-        width: 90%;
     }
-
-    .slide {
-        height: 150px;
+    .arrow-left {
+       left: -20px;
     }
-
+    
+    .arrow-right {
+        left: 280px;
+    }
+    
     .anime-slide {
-        height: 100px;
+        height: 45px;
     }
+    footer {
+        width: 100%;
+        background-color: #FFBF00;
+        padding: 20px;
+        box-sizing: border-box; 
+        height: 100%;
+        font-size: 12px;
+    }
+    .footer-info,
+.footer-account, .get-in-touch { 
+    display: none; 
+}
+.info{
+    display: flex; 
+    font-size: 0.570rem;
+    justify-content: space-between;
+}
+    
 }

@@ -168,6 +168,29 @@ const Home = () => {
     </div>
 
     <footer>
+      {/*For Mobile*/}
+      <div className='info'>
+        <div>
+        <h4><b>Information</b></h4>
+      <a href="#">Search</a>
+      <a href="#">FAQs</a>
+      <a href="#">Payment Methods</a>
+      <a href="#">Shipping/Pick-up Details</a>
+      <a href="#">About us</a>
+        </div>
+        <div>
+      <h4><b>My Account</b></h4>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <a href="#">Profile</a>
+    </div>
+    <div>
+    <h4><b>Get in touch</b></h4>
+      <a href="#">Location & Hours</a>
+    </div>
+      </div>
+
+{/*--------------------------------------------*/}
   <div className='footer-main'>
     <div className='footer-info'>
       <h4><b>Information</b></h4>
