@@ -55,7 +55,7 @@ header {
   height: 8rem;
   width: 8rem;
   position: relative;
-  left: 450px;
+  left: 400px;
   display: block;
 }
 .nav-container {
@@ -77,6 +77,9 @@ header {
     position: relative;
 }
 
+.trust-img{
+    width: 70px;
+}
 .search-popup {
     position: absolute;
     top: 50%;
@@ -257,6 +260,9 @@ input {
         justify-content: center;
     
     }
+    .trust-img{
+        width: 40px;
+    }
     .icon-links {
         display: flex;
         align-items: center;
@@ -300,7 +306,10 @@ input {
         height: 6rem;
         width: 6rem;
         margin-left: 0;
-        left: 170px;
+        left: 140px;
+    }
+    .trust-img{
+        width: 50px;
     }
 
 }

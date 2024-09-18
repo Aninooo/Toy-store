@@ -6,7 +6,7 @@ import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import Trust from '../assets/trust_badge.avif'
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -98,6 +98,7 @@ function Header() {
         </ul>
        
         <div className="icon-links">
+          <img className='trust-img' src={Trust} alt="" />
         <div className='hamburger-menu'><GiHamburgerMenu /></div>
           <div ref={searchButtonRef} style={{ display: 'inline-block' }}>
             <CiSearch 
