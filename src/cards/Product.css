@@ -158,5 +158,9 @@
     .product-price {
       font-size: 0.70rem;
     }
+    .add-to-cart-button {
+      padding: 0.313rem;
+ 
+    }
     
 }
