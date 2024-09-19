@@ -208,13 +208,13 @@
       width: 250px;
     }
     .product-title {
-      font-size: 0.90rem;
+      font-size: 1rem;
     }
     .product-description {
       font-size: 0.700rem;
     }
     .product-price {
-      font-size: 0.70rem;
+      font-size: 1rem;
     }
     .add-to-cart-button {
       padding: 0.380rem;
