@@ -1,3 +1,4 @@
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -266,4 +267,19 @@ color: #ff0000;
     margin: 0;
 }
     
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  
+    .map-section .gmap-frame #gmap-canvas{
+        height: 50vh;
+        width: 600px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .store-loc{
+        text-align: center;
+    }
 }
