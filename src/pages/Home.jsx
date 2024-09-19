@@ -99,7 +99,7 @@ const Home = () => {
         id: 4,
         image: PopDoffyProducts,
         title: 'Pop! Donquixote Doflamingo',
-        description: 'Donquixote Doflamingo is on the hunt to find Luffy and the Straw Hat Pirates to make them pay for his arrest and dethroning.',
+        description: 'Donquixote Doflamingo is on the hunt to find Luffy and the Straw Hat Pirates.',
         price: 650
     },
     {
@@ -120,7 +120,7 @@ const Home = () => {
         id: 7,
         image: G5LuffyProducts,
         title: 'POP Scale Straw Hat Crew Series 001 Nika Monkey D. Luffy',
-        description: 'Fox Studios Resin + PU POP Scale H36 * W24 *D27cm Estimated',
+        description: 'Fox Studios Resin.',
         price: 34000
     },
     {
