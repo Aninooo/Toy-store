@@ -146,6 +146,11 @@ footer {
 .footer-main .get-in-touch a {
     color: black !important; 
 }
+.footer-main .footer-info a:hover,
+.footer-main .footer-account a:hover,
+.footer-main .get-in-touch a:hover {
+    text-decoration: underline white;
+}
 
 a {
     text-decoration: none;
