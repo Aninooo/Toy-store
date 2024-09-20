@@ -10,6 +10,7 @@ import Header from './components/Header.jsx';
 import NewArrivals from './pages/NewArrivals.jsx';
 import Brands from './pages/Brands.jsx'
 import Chatbot from './Chatbot.jsx';
+import ProtectedRoutes from './utils/ProtectedRoutes.jsx';
 import './index.css';
 
 function App() {
@@ -17,6 +18,12 @@ function App() {
     <BrowserRouter>
       <Header /> 
       <Routes>
+
+      <Route element={<ProtectedRoutes/>}>
+       {/*for protected routes add here*/}
+      </Route>
+
+
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
