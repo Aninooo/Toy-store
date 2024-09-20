@@ -3,6 +3,7 @@ import './Product.css';
 import { FaRegHeart } from "react-icons/fa";
 import { FaLink } from 'react-icons/fa';
 
+
 const Product = ({ image, title, description, price }) => {
   const formattedPrice = new Intl.NumberFormat('en-PH', {
     style: 'currency',

@@ -7,7 +7,7 @@ import Contact from './pages/Contact.jsx';
 import Account from './pages/Account.jsx';
 import Search from './pages/Search.jsx';
 import Header from './components/Header.jsx'; 
-import NewArrivals from './pages/NewArrivals.jsx';
+import NewArrivals from './cards/NewArrivals.jsx';
 import Brands from './pages/Brands.jsx';
 import Chatbot from './Chatbot.jsx';
 import ProtectedRoutes from './utils/ProtectedRoutes.jsx';
