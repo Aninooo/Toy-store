@@ -76,6 +76,7 @@ function NewArrivals({ onAddToCart }) {
         {currentProducts.map((product, index) => (
           <div className='product-card' key={index}>
             <img src={product.image} alt={product.title} className='product-image' />
+            <div className='new'>New</div>
             <div className='product-info'>
               <div className='icons-newarrival'>
                 <button onClick={() => handleCopyLink(product.title)} className='iconF-button'><FaLink /></button>

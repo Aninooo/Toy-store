@@ -228,7 +228,38 @@ color: #ff0000;
     display: none; 
 }
 
-
+.emails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.input-email{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+.email-title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #373838;
+}
+.input-email::placeholder{
+    font-size: 1rem;
+}
+.emails > h4{
+    color: #373838;
+}
+.terms-privacy{
+    padding-top: 20px;
+    color: #373838;
+}
+.terms-privacy-click{
+    color: #373838;
+}
 @media (max-width: 768px) {
     .slider-container {
         width: 70%;

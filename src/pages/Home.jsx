@@ -197,6 +197,13 @@ const Home = () => {
       </div>
 
 {/*--------------------------------------------*/}
+<div className='emails'>
+  <div className='email-title'>Anino's Toy Collections</div>
+  <h4>Our newsletters are packed full of special offers, new toys, events, competitions and all the latest in the magical world of toys.</h4>
+  <div> <input className='input-email' placeholder='Email address' type="email" name="email" id="" /> </div>
+  <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from Hamleys.</div>
+  <div className='terms-privacy-click'> Click here to read our a privacy policy & terms and conditions</div><a href=""></a>
+</div>
   <div className='footer-main'>
     <div className='footer-info'>
       <h4><b>Information</b></h4>

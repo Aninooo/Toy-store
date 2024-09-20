@@ -33,11 +33,13 @@
 }
 
 .cart-image {
-    width: 40px; 
-    height: auto;
+    width: 60px; 
+    height: 60px; 
     margin-right: 15px;
     border-radius: 4px;
+    object-fit: contain; 
 }
+
 
 .cart-item-info {
     flex: 1; 

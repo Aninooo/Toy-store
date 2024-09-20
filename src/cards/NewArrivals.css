@@ -123,7 +123,13 @@
   justify-content: space-between;
   width: 100%; 
 }
-
+.new{
+  position: absolute;
+  background-color: #ec6801;
+  top: 10px;
+  right: 0;
+  padding: 0.20rem;
+}
 @media (max-width: 768px) {
   .product-actions {
     flex-direction: column;
