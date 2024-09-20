@@ -1,0 +1,145 @@
+footer {
+    width: 100%;
+    background-color: #FFBF00;
+    padding: 20px;
+    box-sizing: border-box; 
+    height: 100%;
+    font-size: 12px;
+}
+
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 40px;
+    margin-bottom: 20px; 
+}
+
+.footer-info,
+.footer-account, .get-in-touch { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    font-size: 0.90rem;
+}
+.footer-main .footer-info a,
+.footer-main .footer-account a,
+.footer-main .get-in-touch a {
+    color: black !important; 
+}
+.footer-main .footer-info a:hover,
+.footer-main .footer-account a:hover,
+.footer-main .get-in-touch a:hover {
+    text-decoration: underline white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block; 
+    margin: 5px 0; 
+}
+
+.copyrights {
+    text-align: center; 
+    border-top: 1px solid black; 
+    padding-top: 10px; 
+}
+
+.needsomehelp{
+    border-left: 1px solid black ;
+    text-align: center;
+    padding: 0 4rem 0 3.125rem;
+    color: black;
+}
+.needsomehelp > h2{
+    color: white;
+}
+.need-help-icons {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;
+    
+}
+
+.icon-label {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.icon-label a {
+    font-size: 24px; 
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+
+.icon-label label {
+    font-size: 12px;
+    color: black;
+}
+.call:hover{
+    color: green;
+}
+.facebook:hover{
+color: blue;
+}
+.faq:hover{
+    color: white;
+}
+.email:hover{
+color: #ff0000;
+}
+
+.map-section .gmap-frame #gmap-canvas{
+    height: 40vh;
+    width: 800px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.store-loc{
+    text-align: center;
+}
+
+/*For mobile*/
+.info{
+    display: none; 
+}
+
+.emails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.input-email{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+.email-title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #373838;
+}
+.input-email::placeholder{
+    font-size: 1rem;
+}
+.emails > h4{
+    color: #373838;
+}
+.terms-privacy{
+    padding-top: 20px;
+    color: #373838;
+}
+.terms-privacy-click{
+    color: #373838;
+}

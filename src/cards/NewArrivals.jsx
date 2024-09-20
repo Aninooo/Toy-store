@@ -19,6 +19,7 @@ import Shohuko from '../assets/newarrivals/shohuko.png';
 import Sitsakuragi from '../assets/newarrivals/sitsakuragi.jpg';
 import Chibifiresakuragi from '../assets/newarrivals/chibifiresakuragi.jpg';
 import Chibisakuragi from '../assets/newarrivals/chibisakuragi.jpg';
+import Footer from '../components/Footer';
 
 const products = [
   { image: Rukawa, title: 'Rukawa', description: 'SLAM DUNK Figure DiGiSM One and Only SHOHOKU Starting Member Set JAPAN NEW', price: '₱6,000' },
@@ -96,6 +97,7 @@ function NewArrivals({ onAddToCart }) {
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
+      <Footer/>
     </>
   );
 }

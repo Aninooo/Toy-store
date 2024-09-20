@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css';
+import Footer from '../components/Footer';
 
 function Cart({ cartItems }) {
   return (
@@ -26,6 +27,7 @@ function Cart({ cartItems }) {
       {cartItems.length > 0 && (
         <button className="checkout-button">Checkout</button>
       )}
+      <Footer/>
     </div>
   );
 }
