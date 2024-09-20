@@ -14,6 +14,7 @@ import ProtectedRoutes from './utils/ProtectedRoutes.jsx';
 import Cart from './pages/Cart.jsx';
 import Notification from './components/Notification.jsx'; 
 import './index.css';
+import Footer from './components/Footer.jsx';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -56,6 +57,7 @@ function App() {
       </Routes>
       <Chatbot />
       {notification && <Notification message={notification} onClose={handleCloseNotification} />} 
+      <Footer/>
     </BrowserRouter>
   );
 }

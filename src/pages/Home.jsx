@@ -24,7 +24,6 @@ import ResinCorazonProducts from '../assets/products/resincorazon.png'
 import DoffyCoraProducts from '../assets/products/doffycora.png'
 import G5LuffyProducts from '../assets/products/G5Luffy.png'
 import ZoroProducts from '../assets/products/zoro.png'
-import Footer from '../components/Footer.jsx'
 
 
 const images = [Corazon, KidLaw, Beepo];
@@ -169,7 +168,6 @@ const Home = () => {
     <iframe id='gmap-canvas' width="520" height="400" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Sta.%20Cruz%20sur,%20Iriga%20City%20Camarines%20sur+(Anino's%20Toy%20Collections)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
     </div>
     </div>
-    <Footer/>
     <footer>
 
       {/*For Mobile*/}

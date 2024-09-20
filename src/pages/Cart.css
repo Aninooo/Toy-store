@@ -6,6 +6,8 @@
     flex-direction: column;
     align-items: center; 
     margin: 0 auto; 
+    width: 90%; 
+    max-width: 600px;
     
 }
 
@@ -81,7 +83,6 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-bottom: 50px;
 }
 
 .checkout-button:hover {
