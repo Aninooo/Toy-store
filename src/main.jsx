@@ -12,10 +12,12 @@ import Brands from './pages/Brands.jsx';
 import Chatbot from './Chatbot.jsx';
 import ProtectedRoutes from './utils/ProtectedRoutes.jsx';
 import Cart from './pages/Cart.jsx';
+import Notification from './components/Notification.jsx'; 
 import './index.css';
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [notification, setNotification] = useState('');
 
   const handleAddToCart = (product) => {
     setCart((prevCart) => {
@@ -27,20 +29,22 @@ function App() {
             : item
         );
       } else {
-
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
-    alert(`${product.title} added to cart!`);
+    setNotification(`${product.title} added to cart!`);
+    setTimeout(() => setNotification(''), 3000); 
+  };
+
+  const handleCloseNotification = () => {
+    setNotification('');
   };
 
   return (
     <BrowserRouter>
       <Header /> 
       <Routes>
-        <Route element={<ProtectedRoutes />}>
-          {/* I will add protected routes here soon */}
-        </Route>
+        <Route element={<ProtectedRoutes />} />
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
@@ -50,7 +54,8 @@ function App() {
         <Route path="brands" element={<Brands />} />
         <Route path="cart" element={<Cart cartItems={cart} />} />
       </Routes>
-      <Chatbot /> 
+      <Chatbot />
+      {notification && <Notification message={notification} onClose={handleCloseNotification} />} 
     </BrowserRouter>
   );
 }

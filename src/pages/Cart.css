@@ -8,6 +8,7 @@
     margin: 0 auto; 
     width: 90%; 
     max-width: 600px;
+    
 }
 
 .cart h2 {
@@ -21,10 +22,10 @@
     justify-content: space-between; 
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 6px;
     background-color: #f8f8f8;
     transition: background-color 0.2s;
     width: 100%; 
+    border-bottom: 1px solid black;
 }
 
 .cart-item:hover {
@@ -75,7 +76,7 @@
     padding: 10px 15px;
     font-size: 16px;
     color: #fff;
-    background-color: #28a745; 
+    background-color: #ec6801;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -83,7 +84,7 @@
 }
 
 .checkout-button:hover {
-    background-color: #218838; 
+    background-color: #e29255;
 }
 
 .cart-empty {
