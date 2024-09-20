@@ -7,8 +7,8 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className='emails'>
+    <>
+     <div className='emails'>
         <div className='email-title'>Anino's Toy Collections</div>
         <h4>Our newsletters are packed full of special offers, new toys, events, competitions and all the latest in the magical world of toys.</h4>
         <div>
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from Hamleys.</div>
         <div className='terms-privacy-click'>Click here to read our privacy policy & terms and conditions</div>
       </div>
-
+    <footer>
       <div className='footer-main'>
         <div className='footer-info'>
           <h4><b>Information</b></h4>
@@ -67,6 +67,7 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Anino's Toy Collections. All Rights Reserved.</p>
       </div>
     </footer>
+    </>
   );
 };
 

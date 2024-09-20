@@ -1,10 +1,11 @@
 footer {
     width: 100%;
-    background-color: #FFBF00;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 10px;
     box-sizing: border-box; 
     height: 100%;
     font-size: 12px;
+    padding-top: 50px;
 }
 
 
@@ -14,6 +15,7 @@ footer {
     align-items: flex-start; 
     gap: 200px;
     margin-bottom: 20px; 
+   
 }
 
 .footer-info,
@@ -23,7 +25,7 @@ footer {
     align-items: center;
     justify-content: center; 
     font-size: 0.90rem;
-    color: white;
+    color: #FFBF00;
     padding-bottom: 50px;
 }
 .footer-main .footer-info a,
@@ -34,7 +36,7 @@ footer {
 .footer-main .footer-info a:hover,
 .footer-main .footer-account a:hover,
 .footer-main .get-in-touch a:hover {
-    text-decoration: underline white;
+    text-decoration: underline rgb(0, 0, 0);
 }
 
 a {
@@ -58,7 +60,7 @@ a {
     padding-bottom: 50px;
 }
 .needsomehelp > h2{
-    color: white;
+    color: #FFBF00;
 }
 .need-help-icons {
     display: flex;
@@ -109,10 +111,6 @@ color: #ff0000;
     text-align: center;
 }
 
-/*For mobile*/
-.info{
-    display: none; 
-}
 
 .emails{
     display: flex;
@@ -120,6 +118,8 @@ color: #ff0000;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    background-color: #FFBF00;
+    margin-top: 100px;
 }
 .input-email{
     width: 500px;
