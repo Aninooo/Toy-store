@@ -80,8 +80,15 @@
   font-weight: bold;
 }
 
-.product-title{
-  padding-top: 35px;
+.product-title-new{
+  padding-top: 50px;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  color: #FFFFFF;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 
 .description,

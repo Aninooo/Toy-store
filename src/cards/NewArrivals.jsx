@@ -83,7 +83,7 @@ function NewArrivals({ onAddToCart }) {
                 <button onClick={() => handleAddToWishlist(product.title)} className='iconF-button'><FaRegHeart /></button>
                 <button onClick={() => handleAddToCart(product)} className='add-to-cart-buttonF'>Add to Cart</button>
               </div>
-              <div className='product-title'>{product.title}</div>
+              <div className='product-title-new'>{product.title}</div>
               <div className='product-description'>{product.description}</div>
               <div className='product-price'>{product.price}</div>
             </div>
