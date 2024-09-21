@@ -255,10 +255,8 @@ input {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center; 
-        padding: 1rem;
+        position: relative; /* If not already set */
+        z-index: 10; /* Ensure the header itself is above other elements */
     }
 
     .hamburger-menu {
@@ -308,7 +306,7 @@ input {
         top: 100%; 
         left: 0; 
         width: 100%; 
-        z-index: 10;
+        z-index: 9999; 
     }
     
 

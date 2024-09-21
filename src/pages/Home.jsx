@@ -68,6 +68,14 @@ const Home = () => {
     autoplaySpeed: 3000,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    responsive: [
+      {
+          breakpoint: 768, 
+          settings: {
+              slidesToShow: 3, 
+          }
+      }
+  ]
   };
   const products = [
     {

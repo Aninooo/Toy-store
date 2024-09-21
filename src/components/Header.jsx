@@ -18,6 +18,7 @@ function Header() {
 
   const searchPopupRef = useRef(null);
   const searchButtonRef = useRef(null);
+  const navRef = useRef(null);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -43,12 +44,18 @@ function Header() {
     setIsNavOpen(!isNavOpen);
   };
 
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (
         searchPopupRef.current && !searchPopupRef.current.contains(event.target) &&
-        searchButtonRef.current && !searchButtonRef.current.contains(event.target)
+        searchButtonRef.current && !searchButtonRef.current.contains(event.target) &&
+        navRef.current && !navRef.current.contains(event.target)
       ) {
+        closeNav();
         setIsSearchOpen(false);
       }
     }
@@ -74,9 +81,9 @@ function Header() {
           <div className='hamburger-menu' onClick={toggleNav}>
             <GiHamburgerMenu />
           </div>
-          <ul className={`nav-links ${isNavOpen ? 'show' : ''}`}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/newarrivals">New Arrivals</Link></li>
+          <ul ref={navRef} className={`nav-links ${isNavOpen ? 'show' : ''}`}>
+            <li onClick={closeNav}><Link to="/">Home</Link></li>
+            <li onClick={closeNav}><Link to="/newarrivals">New Arrivals</Link></li>
             <li className="dropdown">
               <button 
                 className={`dropdown-toggle ${isProductDropdownOpen ? 'active' : ''}`} 
@@ -85,8 +92,8 @@ function Header() {
                 All Products <IoMdArrowDropdown className="dropdown-icon" />
               </button>
               <ul className={`dropdown-menu ${isProductDropdownOpen ? 'show' : ''}`}>
-                <li><Link to="/big-sale">Big Sale</Link></li>
-                <li><Link to="/on-stack">On Stack</Link></li>
+                <li onClick={closeNav}><Link to="/big-sale">Big Sale</Link></li>
+                <li onClick={closeNav}><Link to="/on-stack">On Stack</Link></li>
               </ul>
             </li>
             <li className="dropdown">
@@ -97,15 +104,15 @@ function Header() {
                 Brands / Toylines <IoMdArrowDropdown className="dropdown-icon" />
               </button>
               <ul className={`dropdown-menu ${isBrandsDropdownOpen ? 'show' : ''}`}>
-                <li><Link to="/brands/bandai">Bandai</Link></li>
-                <li><Link to="/brands/banpresto">Banpresto</Link></li>
-                <li><Link to="/brands/whos-studio">WHO/S Studio</Link></li>
-                <li><Link to="/brands/fox-studios">Fox Studios</Link></li>
-                <li><Link to="/brands/x6-studio">X6 Studio</Link></li>
+                <li onClick={closeNav}><Link to="/brands/bandai">Bandai</Link></li>
+                <li onClick={closeNav}><Link to="/brands/banpresto">Banpresto</Link></li>
+                <li onClick={closeNav}><Link to="/brands/whos-studio">WHO/S Studio</Link></li>
+                <li onClick={closeNav}><Link to="/brands/fox-studios">Fox Studios</Link></li>
+                <li onClick={closeNav}><Link to="/brands/x6-studio">X6 Studio</Link></li>
               </ul>
             </li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li onClick={closeNav}><Link to="/about">About</Link></li>
+            <li onClick={closeNav}><Link to="/contact">Contact</Link></li>
           </ul>
           <div className="icon-links">
             <img className='trust-img' src={Trust} alt="" />

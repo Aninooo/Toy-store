@@ -130,29 +130,19 @@
         padding: 0; 
     }
     .anime-slide {
-        width: calc(100% / 2); 
+        width: calc(100% / 5); 
         height: auto;
         flex: 0 0 auto; 
     }
     .anime-slider-image {
         height: auto; 
-        width: calc(33.33% - 0px); 
-        margin-left: 40px;
-       margin-right: 10px;
-       display: flex;
-       flex-wrap: wrap;
+        width: calc(70.33% - 0px); 
+        margin-left: 20px;
     }
     .arrow {
-        top: 20%; 
+       display: none; 
     }
     
-    .arrow-left {
-        left: 10px;
-    }
-
-    .arrow-right {
-        right: 10px;
-    }
     footer {
         width: 100%;
         background-color: #FFBF00;
