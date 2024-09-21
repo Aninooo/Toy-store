@@ -120,22 +120,38 @@
     .slider-container {
         width: 70%;
     }
-    .anime-slider-image {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
+    .slider-container {
+        width: 50%; 
+        
+    }
 
+    .anime-slider-container {
+        width: 100%; 
+        padding: 0; 
     }
-    .arrow-left {
-       left: -20px;
-    }
-    
-    .arrow-right {
-        left: 280px;
-    }
-    
     .anime-slide {
-        height: 45px;
+        width: calc(100% / 2); 
+        height: auto;
+        flex: 0 0 auto; 
+    }
+    .anime-slider-image {
+        height: auto; 
+        width: calc(33.33% - 0px); 
+        margin-left: 40px;
+       margin-right: 10px;
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .arrow {
+        top: 20%; 
+    }
+    
+    .arrow-left {
+        left: 10px;
+    }
+
+    .arrow-right {
+        right: 10px;
     }
     footer {
         width: 100%;
