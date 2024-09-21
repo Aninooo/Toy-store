@@ -146,3 +146,65 @@ color: #ff0000;
 .terms-privacy-click{
     color: #373838;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px; 
+        font-size: 10px; 
+    }
+
+    .footer-main {
+        flex-direction: column; 
+        gap: 40px;
+        align-items: center;
+    }
+
+    .footer-info,
+    .footer-account,
+    .get-in-touch {
+        padding-bottom: 20px;
+        font-size: 0.8rem; 
+    }
+
+    .needsomehelp {
+        padding: 0 1rem; 
+        border-left: none; 
+        text-align: center;
+    }
+
+    .needsomehelp > h2 {
+        font-size: 1.5rem; 
+    }
+
+    .map-section .gmap-frame #gmap-canvas {
+        width: 100%; 
+        height: 30vh; 
+        margin-bottom: 10px; 
+    }
+
+    .emails {
+        padding-bottom: 20px;
+        margin-top: 50px; 
+    }
+
+    .input-email {
+        width: 300px; 
+    }
+
+    .email-title {
+        font-size: 1rem; 
+    }
+.emails > h4{
+    font-size: 0.80rem;
+    text-align: center;
+}
+    .terms-privacy {
+        font-size: 0.8rem; 
+        text-align: center;
+        
+    }
+    .terms-privacy-click{
+        font-size: 0.9rem; 
+        text-align: center;
+    }
+}

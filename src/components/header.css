@@ -321,6 +321,7 @@ input {
         color: #f7f7f7;
         padding: 0.600rem;
         margin: 0;
+        font-size: 0.70rem;
     }
 }
     
@@ -337,6 +338,17 @@ input {
     .icon-links {
         margin-left: 50px;
     }
+    .fbpage {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        background-color: #373838;
+        color: #f7f7f7;
+        padding: 0.600rem;
+        margin: 0;
+        font-size: 0.70rem;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -346,6 +358,17 @@ input {
 
     .icon-links {
         margin-left: 70px;
+    }
+    .fbpage {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        background-color: #373838;
+        color: #f7f7f7;
+        padding: 0.600rem;
+        margin: 0;
+        font-size: 0.70rem;
     }
 }
 
@@ -372,5 +395,16 @@ input {
 
     .dropdown-toggle {
         font-size: 0.85rem;
+    }
+    .fbpage {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        background-color: #373838;
+        color: #f7f7f7;
+        padding: 0.600rem;
+        margin: 0;
+        font-size: 0.70rem;
     }
 }

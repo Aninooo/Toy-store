@@ -1,4 +1,3 @@
-/* General Layout */
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,7 +6,8 @@
   margin: 0;
   box-sizing: border-box;
   color: #FFFFFF;
-  justify-content: center; /* Center content on larger screens */
+  justify-content: center;
+  
 }
 
 .product-card {
@@ -21,7 +21,8 @@
   height: 100%;
   background-color: #161616;
   width: 300px;
-  margin: auto; /* Center individual cards */
+  margin: auto; 
+  flex: 1;
 }
 
 .pre-order {
@@ -123,69 +124,66 @@
   display: none;
 }
 
-/* Responsive Media Queries */
 @media (max-width: 1200px) {
   .product-list {
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem;
-    justify-content: center; /* Center grid content */
+  }
+
+  .product-card {
+    width: 100%; 
+  }
+
+  .product-image {
+    height: 180px;
   }
 }
 
 @media (max-width: 900px) {
   .product-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     padding: 2rem;
-    justify-content: center; /* Ensure the grid is centered */
+  }
+
+  .product-card {
+    width: 100%; 
+  }
+
+  .product-image {
+    height: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .product-list {
-    display: flex;
-    flex-wrap: wrap; /* Flex to make items responsive */
-    justify-content: center; /* Ensure the content is centered */
+    grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
-    gap: 0.5rem;
   }
 
   .product-card {
-    width: 100%;
-    max-width: 300px; /* Ensure cards don’t exceed their max width */
-    margin: 0.5rem;
+    width: 100%; 
+  }
+
+  .product-image {
+    height: 150px; 
+  }
+  .pre-order{
+    font-size: 0.60rem;
+    font-weight: bold;
   }
 }
 
 @media (max-width: 600px) {
   .product-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Align single-column layout to center */
+    grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
-    gap: 0.5rem;
   }
 
   .product-card {
-    width: 100%;
-    max-width: 300px;
+    width: 100%; 
   }
-}
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
-  .product-card {
-    width: 250px;
-  }
-  .product-title {
-    font-size: 1rem;
-  }
-  .product-description {
-    font-size: 0.700rem;
-  }
-  .product-price {
-    font-size: 0.90rem;
-  }
-  .add-to-cart-button {
-    padding: 0.380rem;
-    font-size: 1.05rem;
+  .product-image {
+    height: 120px;
   }
 }
