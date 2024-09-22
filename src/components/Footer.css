@@ -208,3 +208,15 @@ color: #ff0000;
         text-align: center;
     }
 }
+@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
+
+  
+.footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 100px;
+    margin-bottom: 20px; 
+   
+}
+}
