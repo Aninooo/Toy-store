@@ -217,4 +217,40 @@ color: #ff0000;
     margin-bottom: 20px; 
    
 }
+.footer-info,
+.footer-account, .get-in-touch { 
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.needsomehelp{
+    margin-top: 20px;
+}
+}
+
+@media (min-device-width: 727px){
+    .footer-main {
+        display: flex;
+        margin-bottom: 10px;
+        gap: 0px;
+    }
+}
+
+@media (min-device-width: 420px){
+
+    footer{
+        min-width: 440px;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        right: 0;
+    }
+    .emails> h4{
+        font-size: 1rem;
+    }
+
+ .emails{
+    min-width: 440px;
+ }
+
 }

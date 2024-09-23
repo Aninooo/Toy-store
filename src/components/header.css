@@ -373,7 +373,7 @@ input {
 @media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
     .fbpage {
         display: flex;
-        justify-content: center; 
+        justify-content: center;  
         align-items: center; 
         width: 100%;
         background-color: #373838;
