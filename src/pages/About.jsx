@@ -3,7 +3,10 @@ import Footer from '../components/Footer'
 
 function About() {
   return (
-    <div>About
+    <div>
+      <div>
+        <h3>Facebook: </h3>
+      </div>
 
 <Footer/>
     </div>
