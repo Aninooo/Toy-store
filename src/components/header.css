@@ -371,38 +371,15 @@ input {
 }
 
 @media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
-    .logo-container {
-        flex: 1;
-        justify-content: flex-start;
-    }
-
-    .logo {
-        height: 6rem;
-        width: 6rem;
-        margin-left: 0;
-        left: 140px;
-    }
-
-    .trust-img {
-        width: 50px;
-    }
-
-    .nav-links li a, .dropdown-toggle {
-        font-size: 0.85rem;
-    }
-
-    .dropdown-toggle {
-        font-size: 0.85rem;
-    }
     .fbpage {
         display: flex;
-        justify-content: center; 
+        justify-content: center;  
         align-items: center; 
         width: 100%;
         background-color: #373838;
         color: #f7f7f7;
         padding: 0.600rem;
         margin: 0;
-        font-size: 0.70rem;
+        font-size: 1rem;
     }
 }
