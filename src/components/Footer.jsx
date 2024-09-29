@@ -3,16 +3,23 @@ import { IoIosCall } from "react-icons/io";
 import { SiFacebook } from "react-icons/si";
 import { FaQuestionCircle } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { IoSend } from "react-icons/io5";
 import './Footer.css';
+import { useState } from 'react';
+
+
 
 const Footer = () => {
+  const [count, setCount] = useState(0);
   return (
     <>
      <div className='emails'>
         <div className='email-title'>Anino's Toy Collections</div>
         <h4>Our newsletters are packed full of special offers, new toys, events, competitions and all the latest in the magical world of toys.</h4>
         <div>
-          <input className='input-email' placeholder='Email address' type="email" name="email" />
+           <p>{count}</p>
+          <input className='input-email' placeholder='Email address' type="email" name="email" /> 
+          <span><button  onClick={() => setCount(count + 1)} className='btn-email'><IoSend /></button></span>
         </div>
         <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from Hamleys.</div>
         <div className='terms-privacy-click'>Click here to read our privacy policy & terms and conditions</div>
