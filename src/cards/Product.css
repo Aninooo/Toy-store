@@ -248,10 +248,23 @@
   }
 }
 @media (max-width: 390px) {
-  .product-list {
-    grid-template-columns: repeat(2, 1fr); /* 1 product per row for small screens */
-    padding: 1rem;
+
+  .product-card {
+    width: 100%; 
   }
 
-  
+  .product-image {
+    height: 100px; /* Adjust image height for small screens */
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 5rem;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    justify-content: center;
+    
+  }
 }
