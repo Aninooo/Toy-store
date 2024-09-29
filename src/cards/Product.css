@@ -249,39 +249,9 @@
 }
 @media (max-width: 390px) {
   .product-list {
-    grid-template-columns: repeat(1, 1fr); /* 1 product per row for small screens */
+    grid-template-columns: repeat(2, 1fr); /* 1 product per row for small screens */
     padding: 1rem;
   }
 
-  .product-card {
-    width: 100%; 
-  }
-
-  .product-image {
-    height: 100px; /* Adjust image height for small screens */
-  }
-
-  .pre-order {
-    font-size: 0.60rem;
-    font-weight: bold;
-  }
-
-  .product-footer {
-    opacity: 1; 
-    pointer-events: auto; 
-  }
-
-  .add-to-cart-button,
-  .icon-button {
-    opacity: 1; 
-    pointer-events: auto; 
-    font-size: 0.50rem;
-    width: 100px; /* Narrow button width to fit small screen */
-    height: 30px; /* Reduce button height */
-  }
-
-  .add-to-cart-button:hover,
-  .icon-button:hover {
-    background-color: #ec6801; 
-  }
+  
 }
