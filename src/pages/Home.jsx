@@ -137,6 +137,12 @@ const Home = () => {
   ];
   return (
     <div className='home-container'>
+
+<div className="moving-text">
+<p>This project is not finished yet.</p>
+  </div>
+  
+
       <div className='slider-container'>
         <Slider {...settings}>
           {images.map((image, index) => (

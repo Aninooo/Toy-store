@@ -285,3 +285,25 @@
     font-weight: bold;
   }
 }
+@media (max-width: 390px) {
+
+  .product-card {
+    width: 100%; 
+    height: 100%;
+  }
+
+  .product-image {
+    height: 100px; /* Adjust image height for small screens */
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 5rem;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    justify-content: center;
+    
+  }
+}
