@@ -2,6 +2,7 @@ import React from 'react';
 import './Product.css';
 import { FaRegHeart } from "react-icons/fa";
 import { FaLink } from 'react-icons/fa';
+import { LuShoppingCart } from "react-icons/lu";
 
 
 const Product = ({ image, title, description, price }) => {
@@ -54,8 +55,8 @@ const Product = ({ image, title, description, price }) => {
         <button className="icon-button-mobile" onClick={handleCopyLink}>
           <FaLink />
         </button>
-        <button className="add-to-cart-button-mobile" onClick={handleAddToCart}>
-          Add to Cart
+        <button className="icon-button-mobile" onClick={handleAddToCart}>
+        <LuShoppingCart /> 
         </button>
       </div>
     </div>
