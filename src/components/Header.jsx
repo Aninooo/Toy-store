@@ -7,6 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Trust from '../assets/trust_badge.avif';
+import { FaInstagram } from "react-icons/fa6";
 
 function Header() {
   const [query, setQuery] = useState('');

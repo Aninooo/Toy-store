@@ -42,6 +42,7 @@ function App() {
   };
 
   return (
+    
     <BrowserRouter>
       <Header /> 
       <Routes>
@@ -56,8 +57,10 @@ function App() {
         <Route path="cart" element={<Cart cartItems={cart} />} />
       </Routes>
       <Chatbot />
+      
       {notification && <Notification message={notification} onClose={handleCloseNotification} />} 
       <Footer/>
+      
     </BrowserRouter>
   );
 }

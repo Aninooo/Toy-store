@@ -27,11 +27,13 @@ footer {
     font-size: 0.90rem;
     color: #FFBF00;
     padding-bottom: 50px;
+    margin-top: 20px;
 }
 .footer-main .footer-info a,
 .footer-main .footer-account a,
 .footer-main .get-in-touch a {
     color: black !important; 
+
 }
 .footer-main .footer-info a:hover,
 .footer-main .footer-account a:hover,
@@ -61,6 +63,7 @@ a {
 }
 .needsomehelp > h2{
     color: #FFBF00;
+    margin-top: 20px;
 }
 .need-help-icons {
     display: flex;
@@ -194,20 +197,23 @@ color: #ff0000;
     .email-title {
         font-size: 1rem; 
     }
-.emails > h4{
-    font-size: 0.80rem;
-    text-align: center;
-}
+
+    .emails > h4 {
+        font-size: 0.80rem;
+        text-align: center;
+    }
+
     .terms-privacy {
         font-size: 0.8rem; 
         text-align: center;
-        
     }
-    .terms-privacy-click{
+
+    .terms-privacy-click {
         font-size: 0.9rem; 
         text-align: center;
     }
 }
+
 @media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
 .footer-main {
     display: flex;
@@ -253,4 +259,42 @@ color: #ff0000;
     min-width: 440px;
  }
 
+}
+@media (max-width: 440px) {
+    footer {
+        margin-bottom: 0;
+        font-size: 9px; 
+    }
+
+    .footer-main {
+        flex-direction: column; 
+    }
+
+    .footer-info,
+    .footer-account,
+    .get-in-touch {
+        font-size: 0.7rem; 
+    }
+
+    .needsomehelp > h2 {
+        font-size: 1.3rem; 
+    }
+
+    .input-email {
+        width: 90%; 
+        max-width: 300px; 
+    }
+
+    .email-title {
+        font-size: 1rem; 
+    }
+
+    .emails > h4 {
+        font-size: 0.75rem;
+    }
+
+    .terms-privacy,
+    .terms-privacy-click {
+        font-size: 0.7rem; 
+    }
 }
