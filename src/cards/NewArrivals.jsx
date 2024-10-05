@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './NewArrivals.css';
 import Pagination from '../components/Pagination'; 
 import { FaRegHeart, FaLink } from "react-icons/fa";
+import { LuShoppingCart } from "react-icons/lu";
 
 import Rukawa from '../assets/newarrivals/rukawa.png';
 import Sakuragi from '../assets/newarrivals/sakuragi.png';
@@ -81,7 +82,7 @@ function NewArrivals({ onAddToCart }) {
               <div className='icons-newarrival'>
                 <button onClick={() => handleCopyLink(product.title)} className='iconF-button'><FaLink /></button>
                 <button onClick={() => handleAddToWishlist(product.title)} className='iconF-button'><FaRegHeart /></button>
-                <button onClick={() => handleAddToCart(product)} className='add-to-cart-buttonF'>Add to Cart</button>
+                <button onClick={() => handleAddToCart(product)} className='iconF-button'> <LuShoppingCart className='cart-icon' /> <span>Add to Cart</span> </button>
               </div>
               <div className='product-title-new'>{product.title}</div>
               <div className='product-description'>{product.description}</div>
