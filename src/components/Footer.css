@@ -2,7 +2,7 @@ footer {
     width: 100%;
     background-color: #ffffff;
     padding: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     height: 100%;
     font-size: 12px;
     padding-top: 50px;
@@ -12,30 +12,33 @@ footer {
 .footer-main {
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 200px;
-    margin-bottom: 20px; 
-   
+    margin-bottom: 20px;
+
 }
 
 .footer-info,
-.footer-account, .get-in-touch { 
+.footer-account,
+.get-in-touch {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     font-size: 0.90rem;
     color: #FFBF00;
     padding-bottom: 50px;
     margin-top: 20px;
     padding-right: 50px;
 }
+
 .footer-main .footer-info a,
 .footer-main .footer-account a,
 .footer-main .get-in-touch a {
-    color: black !important; 
+    color: black !important;
 
 }
+
 .footer-main .footer-info a:hover,
 .footer-main .footer-account a:hover,
 .footer-main .get-in-touch a:hover {
@@ -45,44 +48,46 @@ footer {
 a {
     text-decoration: none;
     color: black;
-    display: block; 
-    margin: 5px 0; 
+    display: block;
+    margin: 5px 0;
 }
 
 .copyrights {
-    text-align: center; 
-    border-top: 1px solid black; 
-    padding-top: 10px; 
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 10px;
 }
 
-.needsomehelp{
-    border-left: 1px solid black ;
+.needsomehelp {
+    border-left: 1px solid black;
     text-align: center;
     padding: 0 4rem 0 3.125rem;
     color: black;
     padding-bottom: 50px;
 }
-.needsomehelp > h2{
+
+.needsomehelp>h2 {
     color: #FFBF00;
     margin-top: 20px;
 }
+
 .need-help-icons {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 2rem;
-    
+
 }
 
 .icon-label {
     padding-top: 1rem;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .icon-label a {
-    font-size: 24px; 
+    font-size: 24px;
     color: black;
     text-decoration: none;
     margin-bottom: 2px;
@@ -92,31 +97,36 @@ a {
     font-size: 12px;
     color: black;
 }
-.call:hover{
+
+.call:hover {
     color: green;
 }
-.facebook:hover{
-color: blue;
-}
-.faq:hover{
-    color: white;
-}
-.email:hover{
-color: #ff0000;
+
+.facebook:hover {
+    color: blue;
 }
 
-.map-section .gmap-frame #gmap-canvas{
+.faq:hover {
+    color: white;
+}
+
+.email:hover {
+    color: #ff0000;
+}
+
+.map-section .gmap-frame #gmap-canvas {
     height: 40vh;
     width: 800px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.store-loc{
+
+.store-loc {
     text-align: center;
 }
 
 
-.emails{
+.emails {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,47 +135,54 @@ color: #ff0000;
     background-color: #FFBF00;
     margin-top: 100px;
 }
-.input-email{
+
+.input-email {
     width: 500px;
-    padding: 1.20rem;
+    padding: 1rem;
     border-radius: 5px 0px 0px 5px;
     border: none;
     background-color: white;
 }
-.btn-email{
-    height: 3.60rem;
+
+.btn-email {
+
     border: none;
     width: 5rem;
     cursor: pointer;
 }
-.email-title{
+
+.email-title {
     font-size: 2rem;
     font-weight: bold;
     padding-top: 30px;
     color: #373838;
 }
-.input-email::placeholder{
+
+.input-email::placeholder {
     font-size: 1rem;
 }
-.emails > h4{
+
+.emails>h4 {
     color: #373838;
 }
-.terms-privacy{
+
+.terms-privacy {
     padding-top: 20px;
     color: #373838;
 }
-.terms-privacy-click{
+
+.terms-privacy-click {
     color: #373838;
 }
 
 @media (max-width: 768px) {
     footer {
-        padding: 20px; 
-        font-size: 10px; 
+        padding: 20px;
+        font-size: 10px;
     }
 
     .footer-main {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 40px;
         align-items: center;
     }
@@ -174,80 +191,82 @@ color: #ff0000;
     .footer-account,
     .get-in-touch {
         padding-bottom: 20px;
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
 
     .needsomehelp {
-        padding: 0 1rem; 
-        border-left: none; 
+        padding: 0 1rem;
+        border-left: none;
         text-align: center;
     }
 
-    .needsomehelp > h2 {
-        font-size: 1.5rem; 
+    .needsomehelp>h2 {
+        font-size: 1.5rem;
     }
 
     .map-section .gmap-frame #gmap-canvas {
-        width: 100%; 
-        height: 30vh; 
-        margin-bottom: 10px; 
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 10px;
     }
 
     .emails {
         padding-bottom: 20px;
-        margin-top: 50px; 
+        margin-top: 50px;
     }
 
     .input-email {
-        width: 300px; 
+        width: 300px;
     }
 
     .email-title {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
-    .emails > h4 {
+    .emails>h4 {
         font-size: 0.80rem;
         text-align: center;
     }
 
     .terms-privacy {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
         text-align: center;
     }
 
     .terms-privacy-click {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
         text-align: center;
     }
 }
 
-@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
-.footer-main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    gap: 100px;
-    margin-bottom: 20px; 
-   
-}
-.btn-email{
-    padding: 1rem;
-    border: none;
+@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .footer-main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 100px;
+        margin-bottom: 20px;
+
+    }
+
+    .btn-email {
+        padding: 1rem;
+        border: none;
+    }
+
+    .footer-info,
+    .footer-account,
+    .get-in-touch {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .needsomehelp {
+        margin-top: 20px;
+    }
 }
 
-.footer-info,
-.footer-account, .get-in-touch { 
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.needsomehelp{
-    margin-top: 20px;
-}
-}
-
-@media (min-device-width: 727px){
+@media (min-device-width: 727px) {
     .footer-main {
         display: flex;
         margin-bottom: 10px;
@@ -255,59 +274,61 @@ color: #ff0000;
     }
 }
 
-@media (min-device-width: 420px){
+@media (min-device-width: 420px) {
 
-    footer{
+    footer {
         min-width: 440px;
         margin: 0;
         padding: 0;
         left: 0;
         right: 0;
     }
-    .emails> h4{
+
+    .emails>h4 {
         font-size: 1rem;
     }
 
- .emails{
-    min-width: 440px;
- }
+    .emails {
+        min-width: 440px;
+    }
 
 }
+
 @media (max-width: 440px) {
     footer {
         margin-bottom: 0;
-        font-size: 9px; 
+        font-size: 9px;
     }
 
     .footer-main {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .footer-info,
     .footer-account,
     .get-in-touch {
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
     }
 
-    .needsomehelp > h2 {
-        font-size: 1.3rem; 
+    .needsomehelp>h2 {
+        font-size: 1.3rem;
     }
 
     .input-email {
-        width: 90%; 
-        max-width: 300px; 
+        width: 90%;
+        max-width: 300px;
     }
 
     .email-title {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
-    .emails > h4 {
+    .emails>h4 {
         font-size: 0.75rem;
     }
 
     .terms-privacy,
     .terms-privacy-click {
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
     }
 }

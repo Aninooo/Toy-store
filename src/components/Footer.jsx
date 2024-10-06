@@ -4,23 +4,23 @@ import { SiFacebook } from "react-icons/si";
 import { FaQuestionCircle } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoSend } from "react-icons/io5";
-import emailjs from 'emailjs-com'; 
+import emailjs from 'emailjs-com';
 import './Footer.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState(''); 
+  const [email, setEmail] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     const templateParams = {
-      to_email: email, 
+      to_email: email,
     };
 
     emailjs.send('service_t7o2axd', 'template_iwchkxb', templateParams, 'YOUR_USER_ID')
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
-        setEmail(''); 
+        setEmail('');
       }, (error) => {
         console.log('Failed to send email:', error);
         alert('Failed to send email. Please try again later.');
@@ -38,8 +38,8 @@ const Footer = () => {
             placeholder='Email address'
             type="email"
             name="email"
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <span>
             <button onClick={sendEmail} className='btn-email'>
@@ -105,4 +105,3 @@ const Footer = () => {
 };
 
 export default Footer;
-  
