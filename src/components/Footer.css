@@ -134,23 +134,28 @@ a {
     padding-bottom: 50px;
     background-color: #FFBF00;
     margin-top: 100px;
+
 }
 
 .input-email {
     width: 500px;
     padding: 1rem;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0 0 5px;
     border: none;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .btn-email {
-
-    border: none;
+    border: 1px solid black;
     width: 5rem;
     cursor: pointer;
-    padding: 14px;
-
+    padding: 1rem;
+    border-radius: 0 5px 5px 0;
+    background-color: #FFBF00;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 .email-title {
