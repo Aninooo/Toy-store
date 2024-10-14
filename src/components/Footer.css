@@ -149,6 +149,8 @@ a {
     border: none;
     width: 5rem;
     cursor: pointer;
+    padding: 14px;
+
 }
 
 .email-title {
@@ -250,7 +252,7 @@ a {
     }
 
     .btn-email {
-        padding: 1rem;
+        padding: 2rem;
         border: none;
     }
 
