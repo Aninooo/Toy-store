@@ -141,7 +141,7 @@ const Home = () => {
       if (gifRef.current) {
         gifRef.current.src = "/toy-vid.gif?" + new Date().getTime();
       }
-    }, 3000);
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
