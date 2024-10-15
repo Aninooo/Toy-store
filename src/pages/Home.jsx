@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { gifRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -136,6 +136,21 @@ const Home = () => {
     },
   ];
 
+
+
+
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (gifRef.current) {
+        gifRef.current.src = "/toy-vid.gif?" + new Date().getTime();
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div className='home-container'>
 
@@ -184,6 +199,7 @@ const Home = () => {
           <div className='ATC'><h1>The ATC Story</h1></div>
           <img
             className='circular-vid'
+            ref={gifRef}
             src="/toy-vid.gif"
             alt="Animated GIF"
           />
