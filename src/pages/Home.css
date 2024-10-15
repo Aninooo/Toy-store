@@ -1,4 +1,3 @@
-
 .home-container {
     display: flex;
     flex-direction: column;
@@ -9,10 +8,14 @@
     overflow: hidden;
     color: white;
 }
-.home-container > h1{
+
+.home-container>h1 {
     margin-bottom: 10px;
     font-size: 1.80rem;
+    text-align: center;
+
 }
+
 .slider-container {
     width: 50%;
     max-width: 600px;
@@ -28,18 +31,19 @@
     object-fit: cover;
     margin-top: 30px;
 
-    
+
 }
+
 .slick-prev,
 .slick-next {
-  background-color: transparent !important; 
-  border: none !important; 
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .slick-prev::before,
 .slick-next::before {
-  color:#373838;
-  font-size: 24px !important; 
+    color: #373838;
+    font-size: 24px !important;
 }
 
 .anime-slider-container {
@@ -115,81 +119,109 @@
     transition: transform 0.5s ease-in-out;
 }
 
+.vid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.ATC {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.circular-vid {
+    width: 1000px;
+    height: 550px;
+    border-radius: 20px 20px 20px 20px;
+    object-fit: cover;
+}
 
 @media (max-width: 768px) {
     .slider-container {
         width: 70%;
     }
+
     .slider-container {
-        width: 50%; 
-        
+        width: 50%;
+
     }
 
     .anime-slider-container {
-        width: 100%; 
-        padding: 0; 
+        width: 100%;
+        padding: 0;
     }
+
     .anime-slide {
-        width: calc(100% / 5); 
+        width: calc(100% / 5);
         height: auto;
-        flex: 0 0 auto; 
+        flex: 0 0 auto;
     }
+
     .anime-slider-image {
-        height: auto; 
-        width: calc(70.33% - 0px); 
+        height: auto;
+        width: calc(70.33% - 0px);
         margin-left: 20px;
     }
+
     .arrow {
-       display: none; 
+        display: none;
     }
-    
+
     footer {
         width: 100%;
         background-color: #FFBF00;
         padding: 20px;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         height: 100%;
         font-size: 12px;
     }
+
     .footer-info,
-.footer-account, .get-in-touch { 
-    display: none; 
+    .footer-account,
+    .get-in-touch {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        font-size: 0.570rem;
+        justify-content: space-between;
+    }
+
+    .home-container>h1 {
+        font-size: 15px;
+        margin: 0;
+    }
+
 }
-.info{
-    display: flex; 
-    font-size: 0.570rem;
-    justify-content: space-between;
-}
-.home-container > h1 {
-    font-size: 15px;
-    margin: 0;
-}
-    
-}
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-  
-    .map-section .gmap-frame #gmap-canvas{
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .map-section .gmap-frame #gmap-canvas {
         height: 50vh;
         width: 400px;
         border-radius: 5px;
         margin-bottom: 20px;
     }
-    .store-loc{
+
+    .store-loc {
         text-align: center;
     }
 }
-@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
-    
-    .map-section .gmap-frame #gmap-canvas{
+
+@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .map-section .gmap-frame #gmap-canvas {
         height: 70vh !important;
         width: 500px !important;
         border-radius: 5px;
         margin-bottom: 20px;
     }
-    .store-loc{
+
+    .store-loc {
         text-align: center;
     }
 }
@@ -199,24 +231,26 @@
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    text-align: center; /* Center the text */
-  }
-  
-  .moving-text p {
+    text-align: center;
+    /* Center the text */
+}
+
+.moving-text p {
     display: inline-block;
-    animation: pulse 2s ease-in-out infinite; 
+    animation: pulse 2s ease-in-out infinite;
     padding-top: 10px;
-  }
-  
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}

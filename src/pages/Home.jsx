@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Home.css'; 
+import './Home.css';
 import Corazon from '../assets/img1.jpg';
 import KidLaw from '../assets/img2.jpg';
 import Beepo from '../assets/img3.jpg';
@@ -30,21 +30,21 @@ const images = [Corazon, KidLaw, Beepo];
 const animeLogos = [Bleach, DemonSlayer, Dragonball, HeroAcademia, Onepiece, Slamdunk, Transformers];
 
 const CustomPrevArrow = (props) => {
-    const { onClick } = props;
-    return (
-        <div className="arrow arrow-left" onClick={onClick}>
-            &#10094;
-        </div>
-    );
+  const { onClick } = props;
+  return (
+    <div className="arrow arrow-left" onClick={onClick}>
+      &#10094;
+    </div>
+  );
 };
 
 const CustomNextArrow = (props) => {
-    const { onClick } = props;
-    return (
-        <div className="arrow arrow-right" onClick={onClick}>
-            &#10095;
-        </div>
-    );
+  const { onClick } = props;
+  return (
+    <div className="arrow arrow-right" onClick={onClick}>
+      &#10095;
+    </div>
+  );
 };
 
 const Home = () => {
@@ -52,17 +52,17 @@ const Home = () => {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,    
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
   };
-  
+
   const animeSettings = {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 4, 
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -70,12 +70,12 @@ const Home = () => {
     nextArrow: <CustomNextArrow />,
     responsive: [
       {
-          breakpoint: 768, 
-          settings: {
-              slidesToShow: 3, 
-          }
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
       }
-  ]
+    ]
   };
   const products = [
     {
@@ -93,55 +93,63 @@ const Home = () => {
       price: 2000
     },
     {
-        id: 3,
-        image: DoflamingoProducts,
-        title: 'Doflamingo Blacksuit',
-        description: 'Young Donquixote Doflamingo Black version',
-        price: 12000
+      id: 3,
+      image: DoflamingoProducts,
+      title: 'Doflamingo Blacksuit',
+      description: 'Young Donquixote Doflamingo Black version',
+      price: 12000
     },
     {
-        id: 4,
-        image: PopDoffyProducts,
-        title: 'Pop! Donquixote Doflamingo',
-        description: 'Donquixote Doflamingo is on the hunt to find Luffy and the Straw Hat Pirates.',
-        price: 650
+      id: 4,
+      image: PopDoffyProducts,
+      title: 'Pop! Donquixote Doflamingo',
+      description: 'Donquixote Doflamingo is on the hunt to find Luffy and the Straw Hat Pirates.',
+      price: 650
     },
     {
-    id: 5,
-    image: ResinCorazonProducts,
-    title: 'Donquixote Rosinante Resin statue',
-    description: 'A brand-new, unused, unopened, undamaged item..',
-    price: 32984
+      id: 5,
+      image: ResinCorazonProducts,
+      title: 'Donquixote Rosinante Resin statue',
+      description: 'A brand-new, unused, unopened, undamaged item..',
+      price: 32984
     },
     {
-        id: 6,
-        image: DoffyCoraProducts,
-        title: 'The Gentlest Corazon / Donquixote Rosinante ',
-        description: 'WHO/S Studio Resin + PUH43 * W30 * D38cm Estimated',
-        price: 56000
+      id: 6,
+      image: DoffyCoraProducts,
+      title: 'The Gentlest Corazon / Donquixote Rosinante ',
+      description: 'WHO/S Studio Resin + PUH43 * W30 * D38cm Estimated',
+      price: 56000
     },
     {
-        id: 7,
-        image: G5LuffyProducts,
-        title: 'POP Scale Straw Hat Crew Series 001 Nika Monkey D. Luffy',
-        description: 'Fox Studios Resin.',
-        price: 34000
+      id: 7,
+      image: G5LuffyProducts,
+      title: 'POP Scale Straw Hat Crew Series 001 Nika Monkey D. Luffy',
+      description: 'Fox Studios Resin.',
+      price: 34000
     },
     {
-        id: 8,
-        image: ZoroProducts,
-        title: '1/6 Scale Egghead Island Arc Roronoa Zoro',
-        description: ' ONE PIECE Resin Statue - X6 Studio [Pre-Order]',
-        price: 7616                                                               
+      id: 8,
+      image: ZoroProducts,
+      title: '1/6 Scale Egghead Island Arc Roronoa Zoro',
+      description: ' ONE PIECE Resin Statue - X6 Studio [Pre-Order]',
+      price: 7616
     },
   ];
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 1.0;
+    }
+  }, []);
   return (
     <div className='home-container'>
 
-<div className="moving-text">
-<p>This project is not finished yet.</p>
-  </div>
-  
+      <div className="moving-text">
+        <p>This project is not finished yet.</p>
+      </div>
+
 
       <div className='slider-container'>
         <Slider {...settings}>
@@ -163,27 +171,39 @@ const Home = () => {
         </Slider>
       </div>
       <div className="home-container">
-      <h1>Featured Products</h1>
-      <div className="product-list">
-        {products.map(product => (
-          <Product
-            key={product.id}
-            image={product.image}
-            title={product.title}
-            description={product.description}
-            price={product.price}
-          />
-        ))}
+        <h1>Featured Products</h1>
+        <div className="product-list">
+          {products.map(product => (
+            <Product
+              key={product.id}
+              image={product.image}
+              title={product.title}
+              description={product.description}
+              price={product.price}
+            />
+          ))}
+        </div>
       </div>
+
+
+      <div className='vid-container'>
+        <div>
+          <div className='ATC'><h1>The ATC Story</h1></div>
+          <video ref={videoRef} className='circular-vid' width="500" autoPlay loop muted>
+            <source src="/toy-vid.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
-        <div className='map-section'>
-          <h1 className='store-loc'>Store Location</h1>
+
+
+      <div className='map-section'>
+        <h1 className='store-loc'>Store Location</h1>
         <div className='gmap-frame'>
-    <iframe id='gmap-canvas' width="520" height="400" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Sta.%20Cruz%20sur,%20Iriga%20City%20Camarines%20sur+(Anino's%20Toy%20Collections)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">GPS Trackers</a></iframe>
+          <iframe id='gmap-canvas' width="520" height="400" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Sta.%20Cruz%20sur,%20Iriga%20City%20Camarines%20sur+(Anino's%20Toy%20Collections)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">GPS Trackers</a></iframe>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-    
+
   );
 };
 
