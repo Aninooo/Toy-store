@@ -134,7 +134,7 @@
 
 .circular-vid {
     width: 1000px;
-    height: 550px;
+    height: 500px;
     border-radius: 20px 20px 20px 20px;
     object-fit: cover;
 }

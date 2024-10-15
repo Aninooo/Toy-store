@@ -136,13 +136,6 @@ const Home = () => {
     },
   ];
 
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 1.0;
-    }
-  }, []);
   return (
     <div className='home-container'>
 
@@ -189,10 +182,11 @@ const Home = () => {
       <div className='vid-container'>
         <div>
           <div className='ATC'><h1>The ATC Story</h1></div>
-          <video ref={videoRef} className='circular-vid' width="500" autoPlay loop muted>
-            <source src="/toys-vid.mp4" type="video/mp4" />
-
-          </video>
+          <img
+            className='circular-vid'
+            src="/toy-vid.gif"
+            alt="Animated GIF"
+          />
         </div>
       </div>
 
