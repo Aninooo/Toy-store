@@ -124,12 +124,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
 }
 
 .ATC {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 
 .circular-vid {
@@ -137,6 +137,31 @@
     height: 500px;
     border-radius: 20px 20px 20px 20px;
     object-fit: cover;
+}
+
+.popular-brands-title {
+    padding-bottom: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.popular-brands-title h1 {
+    padding-bottom: 30px;
+}
+
+.brands-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.brands-card img {
+    height: auto;
+    width: 200px;
+}
+
+.megahouse {
+    height: auto;
 }
 
 @media (max-width: 768px) {

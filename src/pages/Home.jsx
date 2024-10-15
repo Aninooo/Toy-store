@@ -25,6 +25,12 @@ import DoffyCoraProducts from '../assets/products/doffycora.png'
 import G5LuffyProducts from '../assets/products/G5Luffy.png'
 import ZoroProducts from '../assets/products/zoro.png'
 
+import Banpresto from '../assets/brands/banpresto.png'
+import Megahouse from '../assets/brands/megahouse.png'
+import Kotobukiya from '../assets/brands/Kotobukiya.png'
+import Aoshima from '../assets/brands/Aoshima.png'
+import Bandai from '../assets/brands/Bandai.png'
+import IchibanKuji from '../assets/brands/ichiban.png'
 
 const images = [Corazon, KidLaw, Beepo];
 const animeLogos = [Bleach, DemonSlayer, Dragonball, HeroAcademia, Onepiece, Slamdunk, Transformers];
@@ -200,6 +206,23 @@ const Home = () => {
           />
         </div>
       </div>
+
+      <div className='popular-brands-title'>
+        <h1>Popular Brands</h1>
+
+        <div className='brands-card'>
+
+
+          <div><img src={Banpresto} alt="" /></div>
+          <div><img style={{ height: 'auto', width: '100px' }} src={Megahouse} alt="" /></div>
+          <div><img src={Kotobukiya} alt="" /></div>
+          <div><img style={{ height: 'auto', width: '100px' }} src={Aoshima} alt="" /></div>
+          <div><img style={{ height: 'auto', width: '100px' }} src={Bandai} alt="" /></div>
+          <div><img src={IchibanKuji} alt="" /></div>
+        </div>
+
+      </div>
+
 
 
       <div className='map-section'>
