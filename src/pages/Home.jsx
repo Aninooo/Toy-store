@@ -191,6 +191,7 @@ const Home = () => {
           <div className='ATC'><h1>The ATC Story</h1></div>
           <video ref={videoRef} className='circular-vid' width="500" autoPlay loop muted>
             <source src="/toys-vid.mp4" type="video/mp4" />
+
           </video>
         </div>
       </div>
