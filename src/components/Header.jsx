@@ -86,8 +86,8 @@ function Header() {
             <li onClick={closeNav}><Link to="/">Home</Link></li>
             <li onClick={closeNav}><Link to="/newarrivals">New Arrivals</Link></li>
             <li className="dropdown">
-              <button 
-                className={`dropdown-toggle ${isProductDropdownOpen ? 'active' : ''}`} 
+              <button
+                className={`dropdown-toggle ${isProductDropdownOpen ? 'active' : ''}`}
                 onClick={toggleProductDropdown}
               >
                 All Products <IoMdArrowDropdown className="dropdown-icon" />
@@ -98,8 +98,8 @@ function Header() {
               </ul>
             </li>
             <li className="dropdown">
-              <button 
-                className={`dropdown-toggle ${isBrandsDropdownOpen ? 'active' : ''}`} 
+              <button
+                className={`dropdown-toggle ${isBrandsDropdownOpen ? 'active' : ''}`}
                 onClick={toggleBrandsDropdown}
               >
                 Brands / Toylines <IoMdArrowDropdown className="dropdown-icon" />
@@ -127,11 +127,11 @@ function Header() {
         {isSearchOpen && (
           <div ref={searchPopupRef} className="search-popup">
             <form onSubmit={handleSearch} className="search-form">
-              <input 
-                type="text" 
-                placeholder="Search..." 
-                value={query} 
-                onChange={(e) => setQuery(e.target.value)} 
+              <input
+                type="text"
+                placeholder="Search..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
               />
               <button type="submit">Search</button>
             </form>

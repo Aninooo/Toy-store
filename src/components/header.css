@@ -5,6 +5,13 @@
     background-color: #373838;
     margin: 0;
     padding: 0.600rem;
+    position: fixed;
+    /* Fixes the position */
+    top: 0;
+    /* Stays at the top */
+    left: 0;
+    z-index: 1000;
+    height: auto;
 }
 
 .fbpage span {
@@ -16,7 +23,7 @@
 }
 
 .fbpage span:after {
-    content: '\00bb''\00bb';
+    content: '\00bb' '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
@@ -42,10 +49,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     padding: 0.625rem;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    z-index: 999;
+    height: auto;
+
+}
+
+.main-content {
+    margin-top: calc(0.600rem + 3.5rem + 0.625rem);
+    /* Height of .fbpage and header */
 }
 
 .logo-container {
@@ -79,7 +95,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 0.50rem;
-    margin: 0; 
+    margin: 0;
     list-style: none;
 }
 
@@ -127,7 +143,8 @@ header {
     cursor: pointer;
 }
 
-.nav-links li a, .dropdown-toggle {
+.nav-links li a,
+.dropdown-toggle {
     text-decoration: none;
     color: black;
     font-size: 1rem;
@@ -142,7 +159,8 @@ header {
     align-items: center;
 }
 
-.nav-links li a::before, .dropdown-toggle::before {
+.nav-links li a::before,
+.dropdown-toggle::before {
     content: "";
     position: absolute;
     left: 0;
@@ -154,13 +172,15 @@ header {
     visibility: hidden;
 }
 
-.nav-links li a:hover::before, .dropdown-toggle:hover::before {
+.nav-links li a:hover::before,
+.dropdown-toggle:hover::before {
     top: 0;
     visibility: visible;
     transition: top 0.4s ease-in-out, visibility 0s ease-in-out 0s;
 }
 
-.nav-links li a:hover, .dropdown-toggle:hover {
+.nav-links li a:hover,
+.dropdown-toggle:hover {
     color: black;
     transform: translateY(-2px);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -255,29 +275,31 @@ input {
 
 @media (max-width: 768px) {
     header {
-        position: relative; /* If not already set */
-        z-index: 10; /* Ensure the header itself is above other elements */
+        position: relative;
+        /* If not already set */
+        z-index: 10;
+        /* Ensure the header itself is above other elements */
     }
 
     .hamburger-menu {
         order: 1;
-        display: flex; 
-        justify-content: flex-start; 
-        align-items: center; 
-        cursor: pointer; 
-        position: absolute; 
-        left: 1rem; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        left: 1rem;
     }
 
     .trust-img {
-        order: 2; 
-        width: 70px; 
+        order: 2;
+        width: 70px;
     }
 
     .logo-container {
-        order: 3; 
+        order: 3;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         margin-left: auto;
     }
 
@@ -287,33 +309,34 @@ input {
     }
 
     .icon-links {
-        order: 4; 
-        display: flex; 
-        align-items: center; 
-        justify-content: flex-end; 
-        gap: 1rem; 
+        order: 4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
         margin-left: auto;
     }
+
     .nav-links {
         display: none;
     }
-    
+
     .nav-links.show {
-        display: flex; 
-        flex-direction: column; 
-        background-color: #FFBF00; 
+        display: flex;
+        flex-direction: column;
+        background-color: #FFBF00;
         position: absolute;
-        top: 100%; 
-        left: 0; 
-        width: 100%; 
-        z-index: 9999; 
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
     }
-    
+
 
     .fbpage {
         display: flex;
-        justify-content: center; 
-        align-items: center; 
+        justify-content: center;
+        align-items: center;
         width: 100%;
         background-color: #373838;
         color: #f7f7f7;
@@ -322,24 +345,26 @@ input {
         font-size: 0.70rem;
     }
 }
-    
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .logo {
         height: 6rem;
         width: 6rem;
     }
 
-    .nav-links li a, .dropdown-toggle {
+    .nav-links li a,
+    .dropdown-toggle {
         font-size: 0.9rem;
     }
 
     .icon-links {
         margin-left: 50px;
     }
+
     .fbpage {
         display: flex;
-        justify-content: center; 
-        align-items: center; 
+        justify-content: center;
+        align-items: center;
         width: 100%;
         background-color: #373838;
         color: #f7f7f7;
@@ -350,17 +375,20 @@ input {
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .nav-links li a, .dropdown-toggle {
+
+    .nav-links li a,
+    .dropdown-toggle {
         font-size: 1rem;
     }
 
     .icon-links {
         margin-left: 70px;
     }
+
     .fbpage {
         display: flex;
-        justify-content: center; 
-        align-items: center; 
+        justify-content: center;
+        align-items: center;
         width: 100%;
         background-color: #373838;
         color: #f7f7f7;
@@ -370,11 +398,11 @@ input {
     }
 }
 
-@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+@media (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .fbpage {
         display: flex;
-        justify-content: center;  
-        align-items: center; 
+        justify-content: center;
+        align-items: center;
         width: 100%;
         background-color: #373838;
         color: #f7f7f7;
