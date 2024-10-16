@@ -104,6 +104,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease, opacity 0.3s ease;
   color: white;
+  font-weight: bold;
 
 }
 

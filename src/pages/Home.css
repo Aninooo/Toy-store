@@ -10,11 +10,20 @@
 }
 
 .home-container>h1 {
-    margin-bottom: 10px;
-    font-size: 1.80rem;
     text-align: center;
+    color: white;
+    font-size: 2.500rem;
+    font-weight: 550;
+    font-family: "Fredoka", arial, sans-serif;
+
+    text-shadow:
+        1px 1px 0 #ff6f00,
+        -1px -1px 0 #ff6f00,
+        1px -1px 0 #ff6f00,
+        -1px 1px 0 #ff6f00;
 
 }
+
 
 .slider-container {
     width: 50%;
@@ -130,11 +139,28 @@
 .ATC {
     text-align: center;
     padding-bottom: 70px;
+
 }
 
+.ATC>h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.500rem;
+    font-weight: 550;
+    font-family: "Fredoka", arial, sans-serif;
+
+    text-shadow:
+        1px 1px 0 #ff6f00,
+        -1px -1px 0 #ff6f00,
+        1px -1px 0 #ff6f00,
+        -1px 1px 0 #ff6f00;
+
+}
+
+
 .circular-vid {
-    width: 1000px;
-    height: 500px;
+    width: 900px;
+    height: 430px;
     border-radius: 20px 20px 20px 20px;
     object-fit: cover;
 }
@@ -143,11 +169,24 @@
     padding-bottom: 30px;
     align-items: center;
     text-align: center;
+
 }
 
 .popular-brands-title h1 {
-    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-size: 2.500rem;
+    font-weight: 550;
+    font-family: "Fredoka", arial, sans-serif;
+
+    text-shadow:
+        1px 1px 0 #ff6f00,
+        -1px -1px 0 #ff6f00,
+        1px -1px 0 #ff6f00,
+        -1px 1px 0 #ff6f00;
+
 }
+
 
 .brands-card {
     display: flex;
@@ -164,6 +203,27 @@
 .megahouse {
     height: auto;
 }
+
+
+.map-section {
+    padding-top: 200px;
+}
+
+.store-loc {
+    text-align: center;
+    color: white;
+    font-size: 2.500rem;
+    font-weight: 550;
+    font-family: "Fredoka", arial, sans-serif;
+
+    text-shadow:
+        1px 1px 0 #ff6f00,
+        -1px -1px 0 #ff6f00,
+        1px -1px 0 #ff6f00,
+        -1px 1px 0 #ff6f00;
+
+}
+
 
 @media (max-width: 768px) {
     .slider-container {

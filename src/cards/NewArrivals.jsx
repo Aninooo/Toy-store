@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NewArrivals.css';
-import Pagination from '../components/Pagination'; 
+import Pagination from '../components/Pagination';
 import { FaRegHeart, FaLink } from "react-icons/fa";
 
 import Rukawa from '../assets/newarrivals/rukawa.png';
@@ -65,12 +65,12 @@ function NewArrivals({ onAddToCart }) {
   };
 
   const handleAddToCart = (product) => {
-    onAddToCart(product); 
+    onAddToCart(product);
   };
 
   return (
     <>
-      <div className='title'>New Arrivals List</div>
+      <div className='title'> <h1>New Arrivals List</h1></div>
 
       <div className="card-container">
         {currentProducts.map((product, index) => (
