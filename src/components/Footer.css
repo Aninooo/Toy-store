@@ -147,12 +147,12 @@ a {
 }
 
 .btn-email {
-    border: 1px solid black;
+    border: none;
     width: 5rem;
     cursor: pointer;
     padding: 1rem;
     border-radius: 0 5px 5px 0;
-    background-color: #FFBF00;
+    background-color: #ff0037;
     color: white;
     align-items: center;
     justify-content: center;

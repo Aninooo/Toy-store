@@ -105,6 +105,7 @@
   transition: background-color 0.3s ease, opacity 0.3s ease;
   color: white;
   margin: 0;
+  font-weight: bold;
 }
 
 .iconF-button {

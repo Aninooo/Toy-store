@@ -10,10 +10,10 @@ function Cart({ cartItems }) {
       ) : (
         cartItems.map((item, index) => (
           <div key={index} className="cart-item">
-            <img 
-              src={item.image} 
-              alt={item.title} 
-              className="cart-image" 
+            <img
+              src={item.image}
+              alt={item.title}
+              className="cart-image"
             />
             <div className="cart-item-info">
               <div className="cart-item-title">{item.title}</div>
