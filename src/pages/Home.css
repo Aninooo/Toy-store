@@ -158,6 +158,7 @@
 .brands-card img {
     height: auto;
     width: 200px;
+    cursor: pointer;
 }
 
 .megahouse {

@@ -213,10 +213,11 @@ const Home = () => {
         <div className='brands-card'>
 
 
-          <div><img src={Banpresto} alt="" /></div>
+
           <div><img style={{ height: 'auto', width: '100px' }} src={Megahouse} alt="" /></div>
           <div><img src={Kotobukiya} alt="" /></div>
           <div><img style={{ height: 'auto', width: '100px' }} src={Aoshima} alt="" /></div>
+          <div><img src={Banpresto} alt="" /></div>
           <div><img style={{ height: 'auto', width: '100px' }} src={Bandai} alt="" /></div>
           <div><img src={IchibanKuji} alt="" /></div>
         </div>
