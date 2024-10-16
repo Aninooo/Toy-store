@@ -29,7 +29,7 @@ import Banpresto from '../assets/brands/banpresto.png'
 import Megahouse from '../assets/brands/megahouse.png'
 import Kotobukiya from '../assets/brands/Kotobukiya.png'
 import Aoshima from '../assets/brands/Aoshima.png'
-import Bandai from '../assets/brands/Bandai.png'
+import Bandai from '../assets/brands/bandai.png'
 import IchibanKuji from '../assets/brands/ichiban.png'
 
 const images = [Corazon, KidLaw, Beepo];
