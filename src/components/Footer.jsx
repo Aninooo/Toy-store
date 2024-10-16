@@ -32,7 +32,7 @@ const Footer = () => {
       <div className='emails'>
         <div className='email-title'>Anino's Toy Collections</div>
         <h4>Our newsletters are packed full of special offers, new toys, events, competitions, and all the latest in the magical world of toys.</h4>
-        <div>
+        <div className='email-container'>
           <input
             className='input-email'
             placeholder='Email address'
@@ -41,11 +41,11 @@ const Footer = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <span>
+          <div>
             <button onClick={sendEmail} className='btn-email'>
               <IoSend />
             </button>
-          </span>
+          </div>
         </div>
         <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from Hamleys.</div>
         <div className='terms-privacy-click'>Click here to read our privacy policy & terms and conditions</div>

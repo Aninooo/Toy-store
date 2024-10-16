@@ -137,6 +137,10 @@ a {
 
 }
 
+.email-container {
+    display: flex;
+}
+
 .input-email {
     width: 500px;
     padding: 1rem;
@@ -147,15 +151,16 @@ a {
 }
 
 .btn-email {
-    border: none;
+    border: 1px solid black !important;
     width: 5rem;
     cursor: pointer;
     padding: 1rem;
     border-radius: 0 5px 5px 0;
-    background-color: #ff0037;
+    background-color: #FFBF00 !important;
     color: white;
     align-items: center;
     justify-content: center;
+
 }
 
 .email-title {
