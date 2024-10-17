@@ -30,7 +30,7 @@ const Product = ({ image, title, description, price }) => {
       <div className='pre-order'>PRE-ORDER</div>
       <div className="product-footer">
         <button className="icon-button" onClick={handleWishlist}>
-        <FaRegHeart />
+          <FaRegHeart />
         </button>
         <button className="icon-button" onClick={handleCopyLink}>
           <FaLink />
@@ -50,16 +50,17 @@ const Product = ({ image, title, description, price }) => {
       </div>
       <div className="product-footer-mobile">
         <button className="icon-button-mobile" onClick={handleWishlist}>
-        <FaRegHeart />
+          <FaRegHeart />
         </button>
         <button className="icon-button-mobile" onClick={handleCopyLink}>
           <FaLink />
         </button>
         <button className="icon-button-mobile" onClick={handleAddToCart}>
-        <LuShoppingCart /> 
+          <LuShoppingCart />
         </button>
       </div>
     </div>
+
   );
 };
 

@@ -20,7 +20,7 @@ function About() {
       </div>
       <div>
         <p style={{ textAlign: "justify", marginLeft: "100px", marginRight: "100px", fontSize: "15px", marginBottom: "20px" }}>
-          Hi! I’m <span style={{ color: "#FFBF00" }}>Bryan</span>, and welcome to <span style={{ color: "#FFBF00" }}>Anino's Toy Collections</span>.
+          Hi! I’m <span style={{ color: "#FFBF00", fontWeight: "bold" }}>Bryan</span>, and welcome to <span style={{ color: "#FFBF00", fontWeight: "bold" }}>Anino's Toy Collections</span>.
         </p>
 
         <p style={{ textAlign: "justify", marginLeft: "100px", marginRight: "100px", fontSize: "15px", marginBottom: "20px" }}>

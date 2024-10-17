@@ -191,7 +191,9 @@ const Home = () => {
               price={product.price}
             />
           ))}
+
         </div>
+        <div className='view-more'><button className='view-more-btn'>View more</button></div>
       </div>
 
 
