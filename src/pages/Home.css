@@ -7,6 +7,7 @@
     width: 100%;
     overflow: hidden;
     color: white;
+
 }
 
 .home-container>h1 {
@@ -120,20 +121,16 @@
     overflow: hidden;
 }
 
-.view-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
 
 .view-more-btn {
     padding: 10px 20px;
     border: none;
-    background-color: #ff0037;
+    background-color: #FFBF00;
     color: white;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 50px;
+
 }
 
 
