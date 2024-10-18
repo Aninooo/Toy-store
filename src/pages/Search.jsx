@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-function Search() {
+const Search = ({ query }) => {
+  const location = useLocation();
+
+  // You can perform your search logic here, maybe fetching from an API or filtering
+  // your products based on the query.
+
   return (
-    <div>Search</div>
-  )
-}
+    <div>
+      <h2>Search Results for "{query}"</h2>
+      {/* Display your search results here */}
+    </div>
+  );
+};
 
-export default Search
+export default Search;
