@@ -79,6 +79,7 @@
   color: #f1c40f;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  padding-top: 10px;
 }
 
 .product-card {
@@ -118,7 +119,7 @@
   transition: opacity 0.3s ease;
   left: 1rem;
   right: 1rem;
-  margin-top: 0.30rem;
+  margin-top: 1rem;
 }
 
 .product-card:hover .product-footer {
