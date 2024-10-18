@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './header.css';
 import { CiShoppingCart, CiSearch } from "react-icons/ci";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
@@ -16,10 +16,19 @@ function Header() {
   const [isBrandsDropdownOpen, setIsBrandsDropdownOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation(); // Used to get the current URL
 
   const searchPopupRef = useRef(null);
   const searchButtonRef = useRef(null);
   const navRef = useRef(null);
+  const navLinks = document.querySelectorAll('.nav-links li a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(nav => nav.parentElement.classList.remove('active')); // Remove active class from all
+      link.parentElement.classList.add('active'); // Add active to clicked item
+    });
+  });
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -67,6 +76,10 @@ function Header() {
     };
   }, []);
 
+  const getLinkClass = (path) => {
+    return location.pathname === path ? 'active' : '';
+  };
+
   return (
     <>
       <div className='head-head'>
@@ -83,8 +96,8 @@ function Header() {
             <GiHamburgerMenu />
           </div>
           <ul ref={navRef} className={`nav-links ${isNavOpen ? 'show' : ''}`}>
-            <li onClick={closeNav}><Link to="/">Home</Link></li>
-            <li onClick={closeNav}><Link to="/newarrivals">New Arrivals</Link></li>
+            <li onClick={closeNav}><Link to="/" className={getLinkClass('/')}>Home</Link></li>
+            <li onClick={closeNav}><Link to="/newarrivals" className={getLinkClass('/newarrivals')}>New Arrivals</Link></li>
             <li className="dropdown">
               <button
                 className={`dropdown-toggle ${isProductDropdownOpen ? 'active' : ''}`}
@@ -93,8 +106,8 @@ function Header() {
                 All Products <IoMdArrowDropdown className="dropdown-icon" />
               </button>
               <ul className={`dropdown-menu ${isProductDropdownOpen ? 'show' : ''}`}>
-                <li onClick={closeNav}><Link to="/big-sale">Big Sale</Link></li>
-                <li onClick={closeNav}><Link to="/on-stack">On Stack</Link></li>
+                <li onClick={closeNav}><Link to="/big-sale" className={getLinkClass('/big-sale')}>Big Sale</Link></li>
+                <li onClick={closeNav}><Link to="/on-stack" className={getLinkClass('/on-stack')}>On Stack</Link></li>
               </ul>
             </li>
             <li className="dropdown">
@@ -105,15 +118,15 @@ function Header() {
                 Brands / Toylines <IoMdArrowDropdown className="dropdown-icon" />
               </button>
               <ul className={`dropdown-menu ${isBrandsDropdownOpen ? 'show' : ''}`}>
-                <li onClick={closeNav}><Link to="/brands/bandai">Bandai</Link></li>
-                <li onClick={closeNav}><Link to="/brands/banpresto">Banpresto</Link></li>
-                <li onClick={closeNav}><Link to="/brands/whos-studio">WHO/S Studio</Link></li>
-                <li onClick={closeNav}><Link to="/brands/fox-studios">Fox Studios</Link></li>
-                <li onClick={closeNav}><Link to="/brands/x6-studio">X6 Studio</Link></li>
+                <li onClick={closeNav}><Link to="/brands/bandai" className={getLinkClass('/brands/bandai')}>Bandai</Link></li>
+                <li onClick={closeNav}><Link to="/brands/banpresto" className={getLinkClass('/brands/banpresto')}>Banpresto</Link></li>
+                <li onClick={closeNav}><Link to="/brands/whos-studio" className={getLinkClass('/brands/whos-studio')}>WHO/S Studio</Link></li>
+                <li onClick={closeNav}><Link to="/brands/fox-studios" className={getLinkClass('/brands/fox-studios')}>Fox Studios</Link></li>
+                <li onClick={closeNav}><Link to="/brands/x6-studio" className={getLinkClass('/brands/x6-studio')}>X6 Studio</Link></li>
               </ul>
             </li>
-            <li onClick={closeNav}><Link to="/about">About</Link></li>
-            <li onClick={closeNav}><Link to="/contact">Contact</Link></li>
+            <li onClick={closeNav}><Link to="/about" className={getLinkClass('/about')}>About</Link></li>
+            <li onClick={closeNav}><Link to="/contact" className={getLinkClass('/contact')}>Contact</Link></li>
           </ul>
           <div className="icon-links">
             <img className='trust-img' src={Trust} alt="" />

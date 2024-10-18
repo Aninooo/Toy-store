@@ -20,6 +20,25 @@
     color: rgb(243, 109, 109);
 }
 
+.nav-links li a:hover {
+    color: black;
+    transform: translateY(-2px);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.nav-links li.active a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.452);
+    visibility: visible;
+    z-index: -1;
+    border-radius: 20px 20px 20px 20px;
+}
+
 .fbpage span:after {
     content: '\00bb' '\00bb';
     position: absolute;
@@ -164,6 +183,7 @@ header {
     transition: top 0.4s ease-in-out, visibility 0s ease-in-out -5s;
     z-index: -1;
     visibility: hidden;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .nav-links li a:hover::before,
