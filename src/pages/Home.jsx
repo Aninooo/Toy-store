@@ -31,6 +31,7 @@ import Kotobukiya from '../assets/brands/Kotobukiya.png'
 import Aoshima from '../assets/brands/Aoshima.png'
 import Bandai from '../assets/brands/bandai.png'
 import IchibanKuji from '../assets/brands/ichiban.png'
+import Animes from '../assets/animes.jpg'
 
 const images = [Corazon, KidLaw, Beepo];
 const animeLogos = [Bleach, DemonSlayer, Dragonball, HeroAcademia, Onepiece, Slamdunk, Transformers];
@@ -197,7 +198,9 @@ const Home = () => {
         <div className='view-more'><button className='view-more-btn'>View more</button></div>
       </div>
 
-
+      <div className='animes'>
+        <img src={Animes} alt="" />
+      </div>
       <div className='vid-container'>
         <div>
           <div className='ATC'><h1>The ATC Story</h1></div>

@@ -156,6 +156,15 @@
 
 }
 
+.animes {
+    padding-bottom: 50px;
+}
+
+.animes img {
+    height: auto;
+    width: 1200px;
+}
+
 .ATC>h1 {
     text-align: center;
     color: white;
