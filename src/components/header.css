@@ -191,6 +191,7 @@ header {
     top: 0;
     visibility: visible;
     transition: top 0.4s ease-in-out, visibility 0s ease-in-out 0s;
+
 }
 
 .nav-links li a:hover,
@@ -198,6 +199,7 @@ header {
     color: black;
     transform: translateY(-2px);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .dropdown {
@@ -243,6 +245,7 @@ header {
     text-decoration: none;
     color: black;
     transition: background-color 0.3s ease-in-out;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .dropdown-menu li a:hover {
