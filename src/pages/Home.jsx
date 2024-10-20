@@ -2,11 +2,16 @@ import React, { gifRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import CountdownTimer from "../components/CountdownTimer"; 
+
 import './Home.css';
 import Corazon from '../assets/img1.jpg';
 import KidLaw from '../assets/img2.jpg';
 import Beepo from '../assets/img3.jpg';
 
+//For slider
+import Windbreaker from '../assets/slider/windbreaker.png'
+import TowerOfGod from '../assets/slider/towerofgod.png'
 import Bleach from '../assets/slider/bleach.png'
 import DemonSlayer from '../assets/slider/demonslayer.png'
 import Dragonball from '../assets/slider/dragonball.png'
@@ -33,8 +38,9 @@ import Bandai from '../assets/brands/bandai.png'
 import IchibanKuji from '../assets/brands/ichiban.png'
 import Animes from '../assets/animes.jpg'
 
+
 const images = [Corazon, KidLaw, Beepo];
-const animeLogos = [Bleach, DemonSlayer, Dragonball, HeroAcademia, Onepiece, Slamdunk, Transformers];
+const animeLogos = [Bleach, DemonSlayer, Dragonball, Windbreaker, HeroAcademia,TowerOfGod, Onepiece, Slamdunk, Transformers];
 
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
@@ -153,6 +159,9 @@ const Home = () => {
   }, []);
 
 
+
+  //TIMERRRR
+  
   return (
     <div className='home-container'>
 
@@ -180,6 +189,11 @@ const Home = () => {
             </div>
           ))}
         </Slider>
+      </div>
+
+
+      <div className='timer-bg'>
+      <CountdownTimer />
       </div>
       <div className="home-container">
         <h1>Featured Products</h1>
