@@ -34,7 +34,7 @@ const CountdownTimer = () => {
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
       <h1 style={{fontSize: "35px"}}>Hurry up! ⌛</h1>
       <div style={{ marginBottom: "20px" }}>
-        <p>KOTOBUKIYA-OUT SALE!</p>
+        <p>ATC-OUT SALE!</p>
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', fontSize: '36px', marginBottom: "50px" }}>
