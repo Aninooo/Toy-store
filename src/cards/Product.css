@@ -187,8 +187,6 @@
 
 }
 
-
-
 @media (max-width: 1200px) {
   .product-list {
     grid-template-columns: repeat(3, 1fr);
