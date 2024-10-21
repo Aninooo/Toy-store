@@ -161,7 +161,7 @@
 .dialog-overlay {
   position: fixed;
   top: 200px;
-  right: 20px;
+  right: 2px;
   z-index: 1000;
 
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -175,16 +175,15 @@
 }
 
 .dialog {
-  background-color: #fff;
+  background-color: #ff4d4f;
   padding: 12px 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 12px;
-  font-weight: bold;
+
   text-align: center;
   width: 200px;
-  color: black;
+  color: white;
 
 }
 
