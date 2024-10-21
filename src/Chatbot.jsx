@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import ChatBot from 'react-simple-chatbot';
-import { Segment, Button } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
+import { PiChatDotsBold } from "react-icons/pi"; // Import the chat icon from react-icons
 import './Chatbot.css';
 
 function Chatbot() {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleChatbot = () => {
-    setIsOpen(!isOpen); 
+    setIsOpen(!isOpen);
   };
+
   const steps = [
     {
       id: 'Greet',
@@ -57,19 +59,20 @@ function Chatbot() {
 
   return (
     <div className="chatbot-container">
-      {/* Button to open/close the chatbot */}
-      <Button 
-        circular 
-        icon={isOpen ? 'close' : 'comments'} 
-        className="chatbot-button" 
-        onClick={toggleChatbot} 
-      />
+      {/* Rectangle container with icon and text */}
+      <div className="chatbot-button-container" onClick={toggleChatbot}>
+        <div className="chatbot-icon">
+          {isOpen ? <PiChatDotsBold size={40} color="#FFBF00" /> : <PiChatDotsBold size={40} color="#FFBF00" />}
+          {/* Chat icon with size and color */}
+        </div>
+        <span className="chatbot-text">Chat</span> {/* Chat text */}
+      </div>
+
       {isOpen && (
         <Segment className="chatbot-segment">
           <ChatBot steps={steps} />
         </Segment>
       )}
-
     </div>
   );
 }
