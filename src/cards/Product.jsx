@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Product.css';
 import { FaRegHeart } from "react-icons/fa";
 import { FaLink } from 'react-icons/fa';
 import { LuShoppingCart } from "react-icons/lu";
 
-
 const Product = ({ image, title, description, price }) => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [dialogMessage, setDialogMessage] = useState('');
+
   const formattedPrice = new Intl.NumberFormat('en-PH', {
     style: 'currency',
     currency: 'PHP',
@@ -16,12 +18,28 @@ const Product = ({ image, title, description, price }) => {
   };
 
   const handleWishlist = () => {
-    alert(`${title} added to wishlist!`);
+    setDialogMessage(`${title} added to wishlist!`);
+    setIsDialogOpen(true);
+    setTimeout(closeDialog, 3000);
   };
 
   const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    alert('Link copied to clipboard!');
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => {
+        setDialogMessage('Link copied to clipboard!');
+        setIsDialogOpen(true);
+        setTimeout(closeDialog, 2000);
+      })
+      .catch(err => {
+        console.error('Failed to copy: ', err);
+        setDialogMessage('Failed to copy link!');
+        setIsDialogOpen(true);
+        setTimeout(closeDialog, 3000);
+      });
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
   };
 
   return (
@@ -59,8 +77,14 @@ const Product = ({ image, title, description, price }) => {
           <LuShoppingCart />
         </button>
       </div>
+      {isDialogOpen && (
+        <div className={`dialog-overlay ${isDialogOpen ? 'show' : ''}`}>
+          <div className="dialog">
+            <h2>{dialogMessage}</h2>
+          </div>
+        </div>
+      )}
     </div>
-
   );
 };
 

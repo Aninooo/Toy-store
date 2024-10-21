@@ -158,6 +158,35 @@
   display: none;
 }
 
+.dialog-overlay {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  z-index: 1000;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.dialog-overlay.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dialog {
+  background-color: #fff;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 5px;
+  text-align: center;
+  width: 200px;
+  color: black;
+
+}
+
 @media (max-width: 1200px) {
   .product-list {
     grid-template-columns: repeat(3, 1fr);
