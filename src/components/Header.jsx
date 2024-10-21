@@ -7,7 +7,6 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Trust from '../assets/trust_badge.avif';
-import { FaInstagram } from "react-icons/fa6";
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -16,19 +15,11 @@ function Header() {
   const [isBrandsDropdownOpen, setIsBrandsDropdownOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation(); // Used to get the current URL
+  const location = useLocation();
 
   const searchPopupRef = useRef(null);
   const searchButtonRef = useRef(null);
   const navRef = useRef(null);
-  const navLinks = document.querySelectorAll('.nav-links li a');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.forEach(nav => nav.parentElement.classList.remove('active')); // Remove active class from all
-      link.parentElement.classList.add('active'); // Add active to clicked item
-    });
-  });
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -56,6 +47,7 @@ function Header() {
 
   const closeNav = () => {
     setIsNavOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -109,7 +101,6 @@ function Header() {
                 <li onClick={closeNav}><Link to="/funko" className={getLinkClass('/on-stack')}>Funko</Link></li>
                 <li onClick={closeNav}><Link to="/big-sale" className={getLinkClass('/big-sale')}>Big Sale</Link></li>
                 <li onClick={closeNav}><Link to="/on-stack" className={getLinkClass('/on-stack')}>On Stack</Link></li>
-
               </ul>
             </li>
             <li className="dropdown">
@@ -157,4 +148,4 @@ function Header() {
   );
 }
 
-export default Header;          
+export default Header;
