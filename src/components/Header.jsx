@@ -106,8 +106,10 @@ function Header() {
                 All Products <IoMdArrowDropdown className="dropdown-icon" />
               </button>
               <ul className={`dropdown-menu ${isProductDropdownOpen ? 'show' : ''}`}>
+                <li onClick={closeNav}><Link to="/funko" className={getLinkClass('/on-stack')}>Funko</Link></li>
                 <li onClick={closeNav}><Link to="/big-sale" className={getLinkClass('/big-sale')}>Big Sale</Link></li>
                 <li onClick={closeNav}><Link to="/on-stack" className={getLinkClass('/on-stack')}>On Stack</Link></li>
+
               </ul>
             </li>
             <li className="dropdown">

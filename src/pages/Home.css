@@ -161,8 +161,9 @@
 }
 
 .animes img {
+    display: block;
+    width: 100%;
     height: auto;
-    width: 1200px;
 }
 
 .ATC>h1 {
@@ -248,7 +249,7 @@
 
 }
 
-.timer-bg{
+.timer-bg {
     background-color: #161616;
     width: 100%;
     margin-bottom: 20px;

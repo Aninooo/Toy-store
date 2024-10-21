@@ -2,7 +2,7 @@ import React, { gifRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import CountdownTimer from "../components/CountdownTimer"; 
+import CountdownTimer from "../components/CountdownTimer";
 
 import './Home.css';
 import Corazon from '../assets/img1.jpg';
@@ -40,7 +40,7 @@ import Animes from '../assets/animes.jpg'
 
 
 const images = [Corazon, KidLaw, Beepo];
-const animeLogos = [Bleach, DemonSlayer, Dragonball, Windbreaker, HeroAcademia,TowerOfGod, Onepiece, Slamdunk, Transformers];
+const animeLogos = [Bleach, DemonSlayer, Dragonball, Windbreaker, HeroAcademia, TowerOfGod, Onepiece, Slamdunk, Transformers];
 
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
@@ -161,7 +161,7 @@ const Home = () => {
 
 
   //TIMERRRR
-  
+
   return (
     <div className='home-container'>
 
@@ -193,7 +193,7 @@ const Home = () => {
 
 
       <div className='timer-bg'>
-      <CountdownTimer />
+        <CountdownTimer />
       </div>
       <div className="home-container">
         <h1>Featured Products</h1>
