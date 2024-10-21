@@ -245,7 +245,6 @@ const Home = () => {
       </div>
 
 
-
       <div className='map-section'>
         <h1 className='store-loc'>Store Location</h1>
         <div className='map-container'>
@@ -269,6 +268,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
 
     </div>
 
