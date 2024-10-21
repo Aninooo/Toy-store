@@ -180,12 +180,15 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 5px;
+  font-size: 12px;
+  font-weight: bold;
   text-align: center;
   width: 200px;
   color: black;
 
 }
+
+
 
 @media (max-width: 1200px) {
   .product-list {
@@ -230,6 +233,11 @@
     width: 100%;
   }
 
+  .dialog {
+    font-size: 5px;
+
+  }
+
   .product-image {
     height: 200px;
   }
@@ -267,6 +275,11 @@
     height: 150px;
   }
 
+  .dialog {
+    font-size: 10px;
+
+  }
+
   .pre-order {
     font-size: 0.60rem;
     font-weight: bold;
@@ -295,6 +308,10 @@
   .product-list {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
+  }
+
+  .dialog {
+    font-size: 10px;
   }
 
   .product-card {

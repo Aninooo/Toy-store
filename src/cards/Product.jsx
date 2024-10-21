@@ -80,7 +80,7 @@ const Product = ({ image, title, description, price }) => {
       {isDialogOpen && (
         <div className={`dialog-overlay ${isDialogOpen ? 'show' : ''}`}>
           <div className="dialog">
-            <h2>{dialogMessage}</h2>
+            <p>{dialogMessage}</p>
           </div>
         </div>
       )}
