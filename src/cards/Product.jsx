@@ -65,6 +65,9 @@ const Product = ({ image, title, description, price }) => {
         <div>
           <span className="product-price">{formattedPrice}</span>
         </div>
+
+        {/*  <div><p>⭐⭐⭐</p>
+        </div> */}
       </div>
       <div className="product-footer-mobile">
         <button className="icon-button-mobile" onClick={handleWishlist}>
