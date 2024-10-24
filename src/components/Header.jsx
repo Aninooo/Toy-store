@@ -103,9 +103,9 @@ function Header() {
           <div className='logo-container'>
 
             {scrollPosition < 1 ? (
-              <img className='logo' src={Logo} alt="Anino Logo" style={{ height: logoHeight, transition: 'height 3s', border: 'none' }} />
+              <img className='logo' src={Logo} alt="Anino Logo" style={{ height: logoHeight, transition: 'height 0.20s', border: 'none' }} />
             ) : (
-              <img className='logo' src={TextLogo} alt="Anino Text Logo" style={{ height: textLogoHeight, transition: 'height 2s', border: 'none' }} />
+              <img className='logo' src={TextLogo} alt="Anino Text Logo" style={{ height: textLogoHeight, transition: 'height 0.30s', border: 'none' }} />
             )}
           </div>
 
