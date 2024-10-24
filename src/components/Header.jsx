@@ -126,7 +126,7 @@ function Header() {
             <div ref={searchButtonRef} style={{ display: 'inline-block' }}>
               <CiSearch onClick={toggleSearch} style={{ cursor: 'pointer' }} />
             </div>
-            <Link to="/account">{<VscAccount style={{ fontSize: '20px' }} />}</Link>
+            <Link>{<VscAccount style={{ fontSize: '20px' }} />}</Link>
             <Link to="/cart"><CiShoppingCart /></Link>
           </div>
         </div>

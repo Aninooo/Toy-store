@@ -82,8 +82,8 @@ function NewArrivals({ onAddToCart }) {
             <div className='new'>New</div>
             <div className='product-info'>
               <div className='icons-newarrival'>
-                <button onClick={() => handleCopyLink(product.title)} className='iconF-button'><FaLink /></button>
                 <button onClick={() => handleAddToWishlist(product.title)} className='iconF-button'><FaRegHeart /></button>
+                <button onClick={() => handleCopyLink(product.title)} className='iconF-button'><FaLink /></button>
                 <button onClick={() => handleAddToCart(product)} className='add-to-cart-buttonF'>Add to Cart</button>
               </div>
               <div className='product-title-new'>{product.title}</div>
