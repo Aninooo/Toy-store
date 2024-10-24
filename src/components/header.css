@@ -289,13 +289,51 @@ input {
     display: none;
 }
 
+header.minimized {
+    height: 6rem;
+    padding: 10px 0;
+}
+
+.nav-container {
+    padding: 20px;
+    transition: padding 0.3s;
+}
+
+header.minimized .nav-container {
+    padding: 20px;
+}
+
+.logo {
+    height: 100px;
+    transition: height 0.3s;
+}
+
+header.minimized .logo {
+    height: 40px;
+}
+
+.logo {
+    height: 100px;
+    transition: height 0.3s, width 0.3s;
+}
+
+header.minimized .logo {
+    height: 80px;
+    width: auto;
+}
+
+header.minimized .logo-container img[alt="Anino Text Logo"] {
+    margin-top: 10px;
+    height: 170px;
+    width: auto;
+    border: none;
+    z-index: -20;
+}
 
 @media (max-width: 768px) {
     header {
         position: relative;
-        /* If not already set */
         z-index: 10;
-        /* Ensure the header itself is above other elements */
     }
 
     .hamburger-menu {

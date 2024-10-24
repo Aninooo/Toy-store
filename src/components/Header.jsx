@@ -5,6 +5,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
+import TextLogo from '../assets/anino-logo.png'; // Import the text logo
 import { GiHamburgerMenu } from "react-icons/gi";
 import Trust from '../assets/trust_badge.avif';
 
@@ -14,6 +15,7 @@ function Header() {
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isBrandsDropdownOpen, setIsBrandsDropdownOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false); // New state for minimizing header
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -50,6 +52,22 @@ function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Scroll effect to minimize header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsMinimized(true);
+      } else {
+        setIsMinimized(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -79,10 +97,15 @@ function Header() {
           <span className='underline'>Follow Anino's Toy Collections Facebook page by Clicking here</span>
         </a>
       </div>
-      <header>
+      <header className={isMinimized ? 'minimized' : ''}>
         <div className='nav-container'>
           <div className='logo-container'>
-            <img className='logo' src={Logo} alt="Logo" />
+            {/* Conditionally render the logo based on scroll position */}
+            {isMinimized ? (
+              <img className='logo' src={TextLogo} alt="Anino Text Logo" />
+            ) : (
+              <img className='logo' src={Logo} alt="Logo" />
+            )}
           </div>
           <div className='hamburger-menu' onClick={toggleNav}>
             <GiHamburgerMenu />

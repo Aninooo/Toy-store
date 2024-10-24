@@ -174,29 +174,29 @@ const Home = () => {
     {
       id: 11,
       image: LuffyG5,
-      title: '',
-      description: 'Pokemon Kotobukiya May with Torchic Figurine',
-      price: 2900
+      title: 'Gear 5 FigLife! Vol. 2',
+      description: 'One Piece - Monkey D. Luffy Figure Banpresto Gear 5 FigLife! Vol. 2',
+      price: 1580
     },
     {
       id: 12,
       image: LuffyYehey,
-      title: 'May with Torchic',
-      description: 'Pokemon Kotobukiya May with Torchic Figurine',
-      price: 2900
+      title: 'Tamashii Nations (Romance Dawn) S.H.Figuarts',
+      description: 'One Piece - Monkey D. Luffy Figure Bandai Tamashii Nations (Romance Dawn) S.H.Figuarts',
+      price: 2560
     },
     {
       id: 13,
       image: LuffyCap,
-      title: 'May with Torchic',
-      description: 'Pokemon Kotobukiya May with Torchic Figurine',
+      title: 'Ichibansho Road to King of the Pirates Masterlise',
+      description: 'One Piece - Monkey D. Luffy Figure Ichibansho Road to King of the Pirates Masterlise',
       price: 2900
     },
     {
       id: 14,
       image: Six,
-      title: 'May with Torchic',
-      description: 'Pokemon Kotobukiya May with Torchic Figurine',
+      title: 'MegaHouse Pirates Party Ochatomo',
+      description: 'One Piece - Monkey D. Luffy, Roronoa Zoro, Sanji, Trafalgar Law, Portgas D Ace, Shanks Figure MegaHouse Pirates Party Ochatomo Mini-Case of 8',
       price: 2900
     }
   ]);
@@ -262,7 +262,7 @@ const Home = () => {
         {visibleProducts < products.length && (
           <div className='view-more'>
             <button className='view-more-btn' onClick={showMoreProducts}>
-              View more
+              Load more
             </button>
           </div>
         )}
