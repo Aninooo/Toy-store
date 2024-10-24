@@ -6,6 +6,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
   const handlePageChange = (page) => {
     onPageChange(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top with smooth behavior
   };
 
   return (
