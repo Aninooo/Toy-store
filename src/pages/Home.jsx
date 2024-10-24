@@ -261,10 +261,11 @@ const Home = () => {
             </iframe>
           </div>
           <div className='store-address'>
-            <h2>Address:</h2>
-            <p>Sta. Cruz Sur, Iriga City</p>
+            <p>Address: Sta. Cruz Sur, Iriga City</p>
+
             <p>4431</p>
             <p>At the back of the Iriga City Hall</p>
+            <p>Contact Number: 09947946338</p>
           </div>
         </div>
       </div>

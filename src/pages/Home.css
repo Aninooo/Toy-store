@@ -245,9 +245,13 @@
 
 .store-address {
     margin-left: 20px;
-    max-width: 200px;
+    max-width: 300px;
     padding: 10px;
     border-radius: 5px;
+}
+
+.store-address>p {
+    font-size: 12px;
 }
 
 .store-loc {
