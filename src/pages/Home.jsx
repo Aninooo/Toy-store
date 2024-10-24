@@ -212,7 +212,7 @@ const Home = () => {
       if (gifRef.current) {
         gifRef.current.src = "/toy-vid.gif?" + new Date().getTime();
       }
-    }, 1000);
+    }, 20000);
     return () => clearInterval(interval);
   }, []);
 
