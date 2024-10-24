@@ -47,15 +47,18 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from Hamleys.</div>
+        <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from ATC.</div>
         <div className='terms-privacy-click'>Click here to read our privacy policy & terms and conditions</div>
       </div>
       <footer>
         <div className='footer-main'>
+
+          <div>
+            <img src={{}} alt="" />
+          </div>
           <div className='footer-info'>
             <h4><b>Information</b></h4>
             <a href="#">Search</a>
-            <a href="#">FAQs</a>
             <a href="#">Payment Methods</a>
             <a href="#">Shipping/Pick-up Details</a>
             <a href="#">About us</a>
@@ -64,13 +67,8 @@ const Footer = () => {
             <h4><b>My Account</b></h4>
             <a href="#">Login</a>
             <a href="#">Register</a>
-            <a href="#">Profile</a>
           </div>
-          <div className='get-in-touch'>
-            <h4><b>Get in touch</b></h4>
-            <a href="#">Location & Hours</a>
-            <a href="#">bryanlomerioanino@gmail.com</a>
-          </div>
+
           <div className='needsomehelp'>
             <h2>Need some help?</h2>
             <p>We're here and ready by phone, email, and Facebook page every day,</p>

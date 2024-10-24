@@ -167,14 +167,14 @@ const Home = () => {
     {
       id: 10,
       image: LuffyKid,
-      title: 'May with Torchic',
-      description: 'Pokemon Kotobukiya May with Torchic Figurine',
+      title: ' Monkey D. Luffy',
+      description: ' Monkey D. Luffy Figure MegaHouse RUN! RUN! RUN! G.E.M. Series',
       price: 2900
     },
     {
       id: 11,
       image: LuffyG5,
-      title: 'May with Torchic',
+      title: '',
       description: 'Pokemon Kotobukiya May with Torchic Figurine',
       price: 2900
     },
