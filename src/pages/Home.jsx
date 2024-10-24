@@ -262,9 +262,8 @@ const Home = () => {
           </div>
           <div className='store-address'>
             <p>Address: Sta. Cruz Sur, Iriga City</p>
-
-            <p>4431</p>
-            <p>At the back of the Iriga City Hall</p>
+            <p>Zip code: 4431</p>
+            <p>Landmark: Iriga Cit Hall</p>
             <p>Contact Number: 09947946338</p>
           </div>
         </div>

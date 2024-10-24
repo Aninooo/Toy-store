@@ -59,13 +59,13 @@ function Chatbot() {
 
   return (
     <div className="chatbot-container">
-      {/* Rectangle container with icon and text */}
+
       <div className="chatbot-button-container" onClick={toggleChatbot}>
         <div className="chatbot-icon">
           {isOpen ? <PiChatDotsBold size={40} color="#FFBF00" /> : <PiChatDotsBold size={40} color="#FFBF00" />}
-          {/* Chat icon with size and color */}
+
         </div>
-        <span className="chatbot-text">Chat</span> {/* Chat text */}
+        <span className="chatbot-text">Chat</span>
       </div>
 
       {isOpen && (
