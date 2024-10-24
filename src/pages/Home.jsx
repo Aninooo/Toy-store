@@ -1,4 +1,4 @@
-import React, { gifRef, useEffect } from 'react';
+import React, { gifRef, useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -92,6 +92,8 @@ const Home = () => {
       }
     ]
   };
+
+  const [visibleProducts, setVisibleProducts] = useState(9);
   const products = [
     {
       id: 1,
@@ -158,6 +160,9 @@ const Home = () => {
     }
   ];
 
+  const showMoreProducts = () => {
+    setVisibleProducts(products.length);
+  };
   useEffect(() => {
     const interval = setInterval(() => {
       if (gifRef.current) {
@@ -218,8 +223,11 @@ const Home = () => {
           ))}
 
         </div>
-        <div className='view-more'><button className='view-more-btn'>View more</button></div>
+        <div className='view-more'><button className='view-more-btn' onClick={showMoreProducts}>View more</button>
+        </div>
       </div>
+
+      {/*       <div> <button onClick={}> View more</button></div> */}
 
       <div className='animes'>
         <img src={Animes} alt="" />
