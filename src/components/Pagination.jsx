@@ -18,7 +18,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        <GrPrevious />
+        <GrPrevious /> Prev
       </button>
 
       {pageNumbers.map(page => (
@@ -36,8 +36,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        <GrNext />
+        Next <GrNext />
       </button>
+
+      <div><p style={{ color: 'white', marginLeft: '20px' }}>Showing 10 of 50 Results</p></div>
     </div>
   );
 };
