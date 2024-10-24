@@ -1,76 +1,89 @@
 import React, { useState } from "react";
 import ChatBot from 'react-simple-chatbot';
 import { Segment } from 'semantic-ui-react';
-import { PiChatDotsBold } from "react-icons/pi"; // Import the chat icon from react-icons
+import { PiChatDotsBold } from "react-icons/pi";
 import './Chatbot.css';
+import botAvatar from './assets/laww.jpg'; // Import your avatar image
 
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
+  const [unreadMessages, setUnreadMessages] = useState(1);
 
   const toggleChatbot = () => {
     setIsOpen(!isOpen);
+
+    if (!isOpen) {
+      setUnreadMessages(0);
+    }
   };
 
   const steps = [
     {
       id: 'Greet',
-      message: 'Hello, Welcome to Anino\'s Toys Collections',
-      trigger: 'Ask Name'
+      message: 'Hello, Welcome to Anino\'s Toys Collections! What can I help you with today?',
+      trigger: 'Select Concern'
     },
     {
-      id: 'Ask Name',
-      message: 'Please enter your name & Your Contact number',
-      trigger: 'waiting1'
-    },
-    {
-      id: 'waiting1',
-      user: true,
-      trigger: 'Name'
-    },
-    {
-      id: 'Name',
-      message: ({ previousValue }) => `Hi ${previousValue}, please select your issue`,
-      trigger: 'Select Issue'
-    },
-    {
-      id: 'Select Issue',
+      id: 'Select Concern',
       options: [
         { value: 'Product Availability', label: 'Product Availability', trigger: 'product' },
         { value: 'Shipping', label: 'Shipping', trigger: 'shipping' },
+        { value: 'Return/Exchange', label: 'Return/Exchange', trigger: 'return' },
         { value: 'Others', label: 'Others', trigger: 'others' },
       ]
     },
     {
       id: 'product',
-      message: 'Our products are updated frequently. You can check the New Arrivals section!',
-      end: true
+      message: 'Our products are updated frequently. You can check the New Arrivals section! What else can I assist you with?',
+      trigger: 'Select Concern'
     },
     {
       id: 'shipping',
-      message: 'We offer worldwide shipping. Delivery times vary by location.',
-      end: true
+      message: 'We offer worldwide shipping. Delivery times vary by location. Is there anything else you need help with?',
+      trigger: 'Select Concern'
+    },
+    {
+      id: 'return',
+      message: 'For returns and exchanges, please refer to our Return Policy page. How can I assist you further?',
+      trigger: 'Select Concern'
     },
     {
       id: 'others',
-      message: 'Feel free to contact us directly for further inquiries!',
+      message: 'Feel free to share your concerns directly, and I\'ll do my best to assist you!',
+      trigger: 'waiting1'
+    },
+    {
+      id: 'waiting1',
+      user: true,
+      trigger: 'Final Message'
+    },
+    {
+      id: 'Final Message',
+      message: ({ previousValue }) => `Thank you for your message: "${previousValue}". I will get back to you shortly!`,
       end: true
     }
   ];
 
   return (
     <div className="chatbot-container">
-
       <div className="chatbot-button-container" onClick={toggleChatbot}>
         <div className="chatbot-icon">
-          {isOpen ? <PiChatDotsBold size={40} color="#FFBF00" /> : <PiChatDotsBold size={40} color="#FFBF00" />}
-
+          <PiChatDotsBold size={40} color="#FFBF00" />
+          {unreadMessages > 0 && (
+            <span className="notification-badge">
+              {unreadMessages}
+            </span>
+          )}
         </div>
         <span className="chatbot-text">Chat</span>
       </div>
 
       {isOpen && (
         <Segment className="chatbot-segment">
-          <ChatBot steps={steps} />
+          <ChatBot
+            steps={steps}
+            botAvatar={botAvatar} // Set your custom avatar here
+          />
         </Segment>
       )}
     </div>

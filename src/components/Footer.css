@@ -151,12 +151,12 @@ a {
 }
 
 .btn-email {
-    border: 1px solid black !important;
+    border-left: 1px solid !important;
     width: 5rem;
     cursor: pointer;
     padding: 1rem;
     border-radius: 0 5px 5px 0;
-    background-color: #FFBF00 !important;
+    background-color: #ffffff !important;
     color: white;
     align-items: center;
     justify-content: center;

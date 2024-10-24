@@ -45,8 +45,9 @@ const Footer = () => {
           />
           <div>
             <button onClick={sendEmail} className='btn-email'>
-              <IoSend />
+              <IoSend style={{ color: '#FFBF00', height: 'auto', width: '20px' }} />
             </button>
+
           </div>
         </div>
         <div className='terms-privacy'>*By submitting your email address, you agree to receive marketing emails from ATC.</div>
