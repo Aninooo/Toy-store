@@ -89,7 +89,7 @@ function Header() {
   };
 
   const logoHeight = `${110 - scrollPosition * 50}px`;
-  const textLogoHeight = `${120 - scrollPosition * 10}px`;
+  const textLogoHeight = `${150 - scrollPosition * 10}px`;
 
   return (
     <>
@@ -105,7 +105,7 @@ function Header() {
             {scrollPosition < 1 ? (
               <img className='logo' src={Logo} alt="Anino Logo" style={{ height: logoHeight, transition: 'height 0.20s', border: 'none' }} />
             ) : (
-              <img className='logo' src={TextLogo} alt="Anino Text Logo" style={{ height: textLogoHeight, transition: 'height 0.30s', border: 'none' }} />
+              <img className='logo' src={TextLogo} alt="Anino Text Logo" style={{ height: textLogoHeight, transition: 'height 0.1s', border: 'none', marginTop: '15px' }} />
             )}
           </div>
 
