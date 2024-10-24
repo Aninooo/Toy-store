@@ -1,12 +1,14 @@
 import React from 'react';
 import './Pagination.css';
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   const handlePageChange = (page) => {
     onPageChange(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top with smooth behavior
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -16,7 +18,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        Previous
+        <GrPrevious />
       </button>
 
       {pageNumbers.map(page => (
@@ -34,7 +36,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        Next
+        <GrNext />
       </button>
     </div>
   );
