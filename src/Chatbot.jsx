@@ -75,7 +75,7 @@ function Chatbot() {
             </span>
           )}
         </div>
-        <span className="chatbot-text">Chat with us</span>
+        <span className="chatbot-text">Chat</span>
       </div>
 
       {isOpen && (
