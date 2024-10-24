@@ -1,19 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Pagination.css';
 
-const Pagination = ({ currentPage, onPageChange }) => {
-  const navigate = useNavigate();
-  const pageNumbers = [1, 2, 3, 4, 5]; // Hardcoded page numbers
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   const handlePageChange = (page) => {
     onPageChange(page);
-    navigate(`/newarrivals/page/${page}`);
   };
 
   return (
     <div className="pagination">
-      {/* Previous Button */}
       <button
         className="pagination-button"
         onClick={() => handlePageChange(currentPage - 1)}
@@ -35,7 +31,7 @@ const Pagination = ({ currentPage, onPageChange }) => {
       <button
         className="pagination-button"
         onClick={() => handlePageChange(currentPage + 1)}
-        disabled={currentPage === pageNumbers.length}
+        disabled={currentPage === totalPages}
       >
         Next
       </button>

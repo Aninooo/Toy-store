@@ -19,6 +19,8 @@ import Shohuko from '../assets/newarrivals/shohuko.png';
 import Sitsakuragi from '../assets/newarrivals/sitsakuragi.jpg';
 import Chibifiresakuragi from '../assets/newarrivals/chibifiresakuragi.jpg';
 import Chibisakuragi from '../assets/newarrivals/chibisakuragi.jpg';
+import Himiko from '../assets/newarrivals/himiko.png';
+
 
 const products = [
   { image: Rukawa, title: 'Rukawa', description: 'SLAM DUNK Figure DiGiSM One and Only SHOHOKU Starting Member Set JAPAN NEW', price: '₱6,000' },
@@ -37,6 +39,7 @@ const products = [
   { image: Sitsakuragi, title: 'Hanamichi Sakuragi Resin M3 Studio Figure GK Model Statue SLAM DUNK', description: 'Sakuragi sitting down', price: '₱5,400' },
   { image: Chibifiresakuragi, title: 'Chibi Fire Sakuragi', description: 'Chibi Sakuragi in action', price: '₱4,000' },
   { image: Chibisakuragi, title: 'Chibi Sakuragi', description: 'Chibi Sakuragi figure', price: '₱1,600' },
+  { image: Himiko, title: 'Himiko Toga', description: 'Villain (Sepia Version) Pre-Order Downpayment', price: '₱1,500' },
 ];
 
 const itemsPerPage = 16;
