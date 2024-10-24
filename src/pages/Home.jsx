@@ -19,6 +19,7 @@ import HeroAcademia from '../assets/slider/heroacademia.png'
 import Onepiece from '../assets/slider/onepiece.png'
 import Slamdunk from '../assets/slider/slamdunk.png'
 import Transformers from '../assets/slider/transformers.png'
+import Pokemon from '../assets/slider/pokemon.png'
 import Product from '../cards/Product';
 
 import CorazonProducts from '../assets/products/corazon.png'
@@ -29,6 +30,7 @@ import ResinCorazonProducts from '../assets/products/resincorazon.png'
 import DoffyCoraProducts from '../assets/products/doffycora.png'
 import G5LuffyProducts from '../assets/products/G5Luffy.png'
 import ZoroProducts from '../assets/products/zoro.png'
+import PokemonGirl from '../assets/products/pokemon-girl.png'
 
 import Banpresto from '../assets/brands/banpresto.png'
 import Megahouse from '../assets/brands/megahouse.png'
@@ -40,7 +42,7 @@ import Animes from '../assets/animes.jpg'
 
 
 const images = [Corazon, KidLaw, Beepo];
-const animeLogos = [Bleach, DemonSlayer, Dragonball, Windbreaker, HeroAcademia, TowerOfGod, Onepiece, Slamdunk, Transformers];
+const animeLogos = [Bleach, DemonSlayer, Dragonball, Windbreaker, HeroAcademia, TowerOfGod, Onepiece, Slamdunk, Transformers, Pokemon];
 
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
@@ -147,6 +149,13 @@ const Home = () => {
       description: ' ONE PIECE Resin Statue - X6 Studio [Pre-Order]',
       price: 7616
     },
+    {
+      id: 9,
+      image: PokemonGirl,
+      title: 'May with Torchic',
+      description: 'Pokemon Kotobukiya May with Torchic Figurine',
+      price: 2900
+    }
   ];
 
   useEffect(() => {
@@ -261,10 +270,10 @@ const Home = () => {
             </iframe>
           </div>
           <div className='store-address'>
-            <p>Address: Sta. Cruz Sur, Iriga City</p>
-            <p>Zip code: 4431</p>
-            <p>Landmark: Iriga Cit Hall</p>
-            <p>Contact Number: 09947946338</p>
+            <p><b>Address:</b> Zone 3, Sta. Cruz Sur, Iriga City</p>
+            <p><b>Zip code:</b> 4431</p>
+            <p><b>Landmark:</b> Iriga Cit Hall</p>
+            <p><b>Contact Number:</b> 09947946338</p>
           </div>
         </div>
       </div>
