@@ -5,6 +5,8 @@ import { FaQuestionCircle } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoSend } from "react-icons/io5";
 import emailjs from 'emailjs-com';
+import Logo from '../assets/logo-Law.png'
+
 import './Footer.css';
 
 const Footer = () => {
@@ -53,8 +55,8 @@ const Footer = () => {
       <footer>
         <div className='footer-main'>
 
-          <div>
-            <img src={{}} alt="" />
+          <div className='logooo'>
+            <img src={Logo} alt="" />
           </div>
           <div className='footer-info'>
             <h4><b>Information</b></h4>
