@@ -5,7 +5,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { VscAccount } from "react-icons/vsc";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Logo from '../assets/logo-Law.png';
-import TextLogo from '../assets/anino-logo.png'; // Import the text logo
+import TextLogo from '../assets/anino-logo.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Trust from '../assets/trust_badge.avif';
 
@@ -15,7 +15,7 @@ function Header() {
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isBrandsDropdownOpen, setIsBrandsDropdownOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isMinimized, setIsMinimized] = useState(false); // New state for minimizing header
+  const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -52,14 +52,12 @@ function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Scroll effect to minimize header
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsMinimized(true);
-      } else {
-        setIsMinimized(false);
-      }
+      const scrollTop = window.scrollY;
+      const maxScroll = 300;
+      const scroll = Math.min(scrollTop / maxScroll, 1);
+      setScrollPosition(scroll);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -90,6 +88,9 @@ function Header() {
     return location.pathname === path ? 'active' : '';
   };
 
+  const logoHeight = `${110 - scrollPosition * 50}px`;
+  const textLogoHeight = `${120 - scrollPosition * 10}px`;
+
   return (
     <>
       <div className='head-head'>
@@ -97,16 +98,17 @@ function Header() {
           <span className='underline'>Follow Anino's Toy Collections Facebook page by Clicking here</span>
         </a>
       </div>
-      <header className={isMinimized ? 'minimized' : ''}>
-        <div className='nav-container'>
+      <header style={{ height: `${135 - scrollPosition * 60}px`, transition: 'height 0.3s', border: 'none' }}>
+        <div className='nav-container' style={{ padding: `${20 - scrollPosition * 10}px 0`, border: 'none' }}>
           <div className='logo-container'>
-            {/* Conditionally render the logo based on scroll position */}
-            {isMinimized ? (
-              <img className='logo' src={TextLogo} alt="Anino Text Logo" />
+
+            {scrollPosition < 1 ? (
+              <img className='logo' src={Logo} alt="Anino Logo" style={{ height: logoHeight, transition: 'height 3s', border: 'none' }} />
             ) : (
-              <img className='logo' src={Logo} alt="Logo" />
+              <img className='logo' src={TextLogo} alt="Anino Text Logo" style={{ height: textLogoHeight, transition: 'height 2s', border: 'none' }} />
             )}
           </div>
+
           <div className='hamburger-menu' onClick={toggleNav}>
             <GiHamburgerMenu />
           </div>
