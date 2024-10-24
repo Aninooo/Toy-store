@@ -3,7 +3,7 @@ import ChatBot from 'react-simple-chatbot';
 import { Segment } from 'semantic-ui-react';
 import { PiChatDotsBold } from "react-icons/pi";
 import './Chatbot.css';
-import botAvatar from './assets/laww.jpg'; // Import your avatar image
+import botAvatar from './assets/laww.jpg';
 
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,14 +75,14 @@ function Chatbot() {
             </span>
           )}
         </div>
-        <span className="chatbot-text">Chat</span>
+        <span className="chatbot-text">Chat with us</span>
       </div>
 
       {isOpen && (
         <Segment className="chatbot-segment">
           <ChatBot
             steps={steps}
-            botAvatar={botAvatar} // Set your custom avatar here
+            botAvatar={botAvatar}
           />
         </Segment>
       )}
