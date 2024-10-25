@@ -268,11 +268,44 @@
         -1px 1px 0 #ff6f00;
 }
 
+.countdown-timer {
+    position: fixed;
+    font-size: 10px;
+    top: 400px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.591);
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    color: black;
+}
+
+.countdown-timer>p {
+    font-weight: bold;
+}
+
+.time-display {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    font-size: 10px;
+}
+
+.time-value {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.time-label {
+    font-size: 10px;
+}
 
 .timer-bg {
     background-color: #161616;
-    width: 100%;
-    margin-bottom: 20px;
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 
