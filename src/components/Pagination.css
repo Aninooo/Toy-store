@@ -6,21 +6,18 @@
 
 .pagination-button {
   display: flex;
-  /* Flexbox for alignment */
   align-items: center;
-  /* Center items vertically */
   padding: 5px 10px;
   border: 1px solid #ccc;
   background-color: #fff;
   color: #333;
   cursor: pointer;
   margin: 0 5px;
-  /* Spacing between buttons */
 }
 
 .pagination-icon {
   margin-right: 5px;
-  /* Space between icon and text */
+
 }
 
 .pagination-button.active {
@@ -31,6 +28,7 @@
 .pagination-button:hover {
   background-color: #FFBF00;
   color: #fff;
+  transition: background-color 0.50s;
 }
 
 .pagination-button:disabled {
