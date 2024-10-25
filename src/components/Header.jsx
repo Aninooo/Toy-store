@@ -8,6 +8,7 @@ import Logo from '../assets/logo-Law.png';
 import TextLogo from '../assets/anino-logo.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Trust from '../assets/trust_badge.avif';
+import { Dropdown } from 'semantic-ui-react';
 
 function Header() {
   const [query, setQuery] = useState('');
@@ -71,7 +72,8 @@ function Header() {
       if (
         searchPopupRef.current && !searchPopupRef.current.contains(event.target) &&
         searchButtonRef.current && !searchButtonRef.current.contains(event.target) &&
-        navRef.current && !navRef.current.contains(event.target)
+        navRef.current && !navRef.current.contains(event.target) &&
+        isProductDropdownOpen.current && !isProductDropdownOpen.current.contains(event.target)
       ) {
         closeNav();
         setIsSearchOpen(false);

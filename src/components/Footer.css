@@ -164,10 +164,23 @@ a {
 }
 
 .logooo>img {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
     height: auto;
-    width: 70px;
+    width: 100px;
     margin-top: 30px;
-    margin-right: 80px;
+}
+
+.logooo {
+    padding: 10px 50px 50px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
 }
 
 .email-title {
