@@ -21,7 +21,6 @@ import Chibifiresakuragi from '../assets/newarrivals/chibifiresakuragi.jpg';
 import Chibisakuragi from '../assets/newarrivals/chibisakuragi.jpg';
 import Himiko from '../assets/newarrivals/himiko.png';
 
-
 const products = [
   { image: Rukawa, title: 'Rukawa', description: 'SLAM DUNK Figure DiGiSM One and Only SHOHOKU Starting Member Set JAPAN NEW', price: '₱6,000' },
   { image: Sakuragi, title: 'Sakuragi', description: 'SLAM DUNK Figure DiGiSM One and Only SHOHOKU Starting Member Set JAPAN NEW', price: '₱7,000' },
@@ -71,9 +70,14 @@ function NewArrivals({ onAddToCart }) {
     onAddToCart(product);
   };
 
+  const displayedEnd = Math.min(endIdx, products.length);
+  const totalResults = products.length;
+
   return (
     <>
-      <div className='title'> <h1>New Arrivals List</h1></div>
+      <div className='title'>
+        <h1>New Arrivals List</h1>
+      </div>
 
       <div className="card-container">
         {currentProducts.map((product, index) => (
@@ -92,6 +96,10 @@ function NewArrivals({ onAddToCart }) {
             </div>
           </div>
         ))}
+      </div>
+
+      <div style={{ color: 'white', marginLeft: '20px' }}>
+        <p>Showing {displayedEnd} of {totalResults} Results</p>
       </div>
 
       <Pagination

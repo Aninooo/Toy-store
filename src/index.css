@@ -6,6 +6,9 @@ body {
   font-family: "Poppins", sans-serif;
   padding-top: 150px;
 
+}
 
 
+.mainContainer {
+  background-color: red;
 }

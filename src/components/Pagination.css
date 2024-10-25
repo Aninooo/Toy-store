@@ -5,13 +5,22 @@
 }
 
 .pagination-button {
+  display: flex;
+  /* Flexbox for alignment */
+  align-items: center;
+  /* Center items vertically */
   padding: 5px 10px;
-  margin: 0;
   border: 1px solid #ccc;
   background-color: #fff;
   color: #333;
   cursor: pointer;
-  margin-bottom: 40px;
+  margin: 0 5px;
+  /* Spacing between buttons */
+}
+
+.pagination-icon {
+  margin-right: 5px;
+  /* Space between icon and text */
 }
 
 .pagination-button.active {
