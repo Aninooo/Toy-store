@@ -5,7 +5,7 @@ footer {
     box-sizing: border-box;
     height: 100%;
     font-size: 12px;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 
@@ -28,7 +28,6 @@ footer {
     font-size: 0.90rem;
     color: #FFBF00;
     padding-bottom: 50px;
-    margin-top: 20px;
     padding-right: 50px;
 }
 
@@ -131,9 +130,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
     background-color: #FFBF00;
-    margin-top: 100px;
 
 }
 
@@ -205,6 +202,7 @@ a {
 
 .terms-privacy-click {
     color: #373838;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
